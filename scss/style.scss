@@ -1,0 +1,69 @@
+@import "set";
+
+@import "header";
+@import "footer";
+
+@import "baner";
+@import "areas";
+@import "our-numbers";
+@import "about-us";
+
+
+.container {
+  margin-bottom: 20rem;
+
+  & > .top-title {
+    text-align: center;
+  }
+}
+.btn {
+  display: block;
+  cursor: pointer;
+  border: 1px solid #0D0D0D;
+  border-radius: 6.9rem;
+  padding: 1.2rem 6.8rem;
+  font-size: 2rem;
+  line-height: normal;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.top-title {
+  font-size: 7.5rem;
+  font-family: 'Cochineal';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 4.5px;
+}
+.blue-text {
+  color: #274497;
+}
+.arrow {
+  position: absolute;
+  top: 2.5rem;
+  width: 3.25rem;
+  height: 1px;
+  background-color: #274497;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1px;
+    right: -0.3rem;
+    background-color: #274497;
+    top: -0.3rem;
+    transform: rotate(45deg);
+  }
+}
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}
