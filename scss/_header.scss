@@ -65,7 +65,7 @@
                     top: 30%;
                     transform: rotate(180deg);
                 }
-                & .header__menu-list {
+                & .header__menu-container {
                     opacity: 1;
                     z-index: 2;
                     transform: translateY(0);
@@ -74,24 +74,30 @@
             }
         }
 
-        &-list {
-            display: flex;
-            flex-direction: column;
+        &-container {
             position: absolute;
-            background-color: #EFEFF2;
-            gap: 2rem;
-            flex-wrap: wrap;
-            line-height: 150%;
-            font-size: 1.8rem;
+            width: 75rem;
+            height: 14rem;
             bottom: -14rem;
             left: -3.2rem;
             opacity: 0;
             z-index: -1;
-            height: 14rem;
-            width: 74.6rem;
-            padding: 3.2rem 2.7rem;
+            background-color: #EFEFF2;
             transition: 0.5s opacity;
+        }
 
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            gap: 2rem;
+            flex-wrap: wrap;
+            line-height: 150%;
+            font-size: 1.8rem;
+            height: 100%;
+            width: 100%;
+            padding: 3.2rem 2.7rem;
         }
         &-link {
             color: #274497;
@@ -135,5 +141,134 @@
 }
 
 @media (max-width: 48em) {
+    .header {
+        margin-top: 2.5rem;
+        text-transform: uppercase;
+    
+        .container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+        }
+    
+        &__burger {
+            display: block;
+            position: relative;
+            width: 5.6rem;
+            height: 3.2rem;
 
+            &-icon {
+                transition-duration: 0.5s;
+                position: absolute;
+                height: 0.4rem;
+                width: 100%;
+                top: 50%;
+                background-color: #0D0D0D;
+                border-radius: 5rem;
+                left: 0;
+                right: 0;
+                margin: auto; 
+
+                &::before {
+                    content: "";
+                    transition-duration: 0.5s;
+                    position: absolute;
+                    height: 0.4rem;
+                    width: 100%;
+                    background-color: #0D0D0D;
+                    top: -1.6rem;
+                    border-radius: 5rem;
+                }
+                &::after {
+                    content: "";
+                    transition-duration: 0.5s;
+                    position: absolute;
+                    height: 0.4rem;
+                    width: 100%;
+                    background-color: #0D0D0D;
+                    top: 1.6rem;
+                    border-radius: 5rem;
+                  }
+            }
+        }
+        &__logo {
+            margin-right: 0;
+    
+            img {
+                width: 21.8rem;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                gap: 1.8rem;
+            }
+            p {
+                color: #0D0D0D;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                font-size: 2.2rem;
+                width: 27rem;
+            }
+        }
+        &__menu {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+    
+            &-btn {
+                p {
+                    display: none;
+                }
+            }
+
+            &-container {
+                position: absolute;
+                width: 75rem;
+                height: 80rem;
+                bottom: unset;
+                top: 5rem;
+                left: -2.2rem;
+                opacity: 1;
+                z-index: 20;
+                background-color: #EFEFF2;
+                transition: 0.5s opacity;
+                display: none;
+            }
+    
+            &-list {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                gap: 4rem;
+                flex-wrap: nowrap;
+                line-height: 150%;
+                font-size: 2.8rem;
+                height: 100%;
+                width: 100%;
+                padding: 3.2rem 2.7rem;
+            }
+
+            &-link {
+                display: none;
+            }
+            &-search {
+                margin: 0;
+                width: 60.5rem;
+                height: 8rem;
+                border: 1px solid #D9D9D9;
+                position: relative;
+                background: url(../img/icon/search.svg) no-repeat center right 3.6rem/3.6rem;
+            }
+        }
+        &__right {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
 }

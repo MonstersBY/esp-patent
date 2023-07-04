@@ -115,3 +115,131 @@
     }
 }
 
+@media (max-width: 48em) {
+    .baner {
+        margin-top: 5rem;
+        margin-bottom: 24rem;
+        position: relative;
+        
+        .container {
+            width: 100%;
+        }
+        &-swiper {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 25.2rem;
+        }
+        .swiper-wrapper {
+            align-items: center;
+        }
+    
+        .swiper-slide {
+            width: 100%;
+    
+            &.swiper-slide-active {
+                width: 100%;
+
+                .baner-circle {
+                    width: 67.6rem;
+                    height: 67.6rem;
+                    border: none;
+                    margin: 0 auto;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .baner-circle {
+                height: 60rem;
+                border: 1.2px solid #B1C8EE;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img {
+                width: 48.9rem;
+                height: 48.7rem;
+            }
+        }
+        .baner-swiper-next, .baner-swiper-prev {
+            top: 67.5%;
+            width: 8rem;
+            &::after {
+                content: unset;
+            }
+            .arrow {
+                width: 8rem;
+
+                &::after {
+                    width: 2rem;
+                    top: -0.6rem;
+                }
+            }
+        }
+        .baner-swiper-next {
+            right: 2rem;
+        }
+        .baner-swiper-prev {
+            left: 2rem;
+    
+            .arrow::after {
+                right: auto;
+                left: -0.3rem;
+                transform: rotate(135deg);
+            }
+        }
+        .swiper-pagination {
+            display: flex;
+            gap: 1.1rem;
+            align-items: center;
+            bottom: 36rem;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            z-index: 0;
+        }
+        .swiper-pagination-bullet {
+            background-color: inherit;
+            color: #949494;
+            font-size: 3.6rem;
+            font-family: 'Cochineal';
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.92px;
+            text-transform: uppercase;
+            width: auto;
+            height: auto;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: inherit;
+            color: #0D0D0D;
+            font-size: 6.4rem;
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            position: relative;
+            width: auto;
+            right: unset;
+            bottom: unset;
+        }
+        &__title {
+            font-size: 5.6rem;
+            font-family: 'Cochineal';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 123%;
+            letter-spacing: 1.68px;
+        }
+        &__subtitle {
+            font-size: 2.8rem;
+            font-weight: 400;
+            line-height: 140%;
+            width: 90%;
+        }
+    }
+}

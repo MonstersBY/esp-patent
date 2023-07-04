@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="header__burger">
             <div class="header__burger-icon"></div>
@@ -26,28 +27,36 @@
         <div class="header__menu">
             <div class="header__menu-btn">
                 <p>меню</p>
-                <div class="header__menu-list">
-                    <a href="">О компании</a>
-                    <a href="">команда</a>
-                    <a href="">Истории из жизни</a>
-                    <a href="">Мы в эфире</a>
-                    <a href="">Партнеры</a>
-                    <a href="">контакты</a>
-                    <a href="">новости</a>
-                    <a href="">справочник</a>
+                <div class="header__menu-container">
+                    <div class="header__menu-list">
+                        <input class="header__menu-search mobile" type="text">
+                        <a href="">О компании</a>
+                        <a href="">команда</a>
+                        <a href="">Истории из жизни</a>
+                        <a href="">Мы в эфире</a>
+                        <a href="">Партнеры</a>
+                        <a href="">контакты</a>
+                        <a href="">новости</a>
+                        <a href="">справочник</a>
+                    </div>
                 </div>
             </div>
 
             <a class="header__menu-link">направления работы</a>
-            <input class="header__menu-search" type="text">
+            <input class="header__menu-search desktop" type="text">
         </div>
-        <div class="header__right">
+        <div class="header__right desktop">
             <div class="header__menu-mobile">+ 7 495 225 52 07</div>
             <a href="" class="header__menu-social">
                 <img src="./img/icon/mail.svg" alt="">
             </a>
             <a href="" class="header__menu-social">
                 <img src="./img/icon/telephone.svg" alt="">
+            </a>
+        </div>
+        <div class="header__right mobile">
+            <a href="" class="header__menu-social">
+                <img src="./img/icon/call.svg" alt="">
             </a>
         </div>
     </div>
@@ -80,14 +89,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next baner-swiper-next">
-                    <div class="arrow"></div>
-                </div>
-                <div class="swiper-button-prev baner-swiper-prev">
-                    <div class="arrow left"></div>
-                </div>
-                <div class="swiper-pagination baner-pagination"></div>
             </div>
+            <div class="swiper-button-next baner-swiper-next">
+                <div class="arrow"></div>
+            </div>
+            <div class="swiper-button-prev baner-swiper-prev">
+                <div class="arrow left"></div>
+            </div>
+            <div class="swiper-pagination baner-pagination"></div>
             <div class="baner__text">
                 <div class="baner__title">Решение <span class="blue-text">сложных</span> проблем</div>
                 <div class="baner__subtitle">Наше патентное агентство оказывает услуги в области защиты прав на объекты интеллектуальной собственности в России и за рубежом</div>
@@ -99,7 +108,45 @@
         <div class="container">
             <div class="areas-left">
                 <div class="top-title">Сферы <br><span class="blue-text">деятельности</span></div>
-                <div class="btn">ОСТАВИТЬ ЗАЯВКУ</div>
+                <div class="btn btn-sub-app">ОСТАВИТЬ ЗАЯВКУ</div>
+                <div class="modal-box">
+                    <div class="modal-box__container">
+                        <div class="modal-box__close"></div>
+                        <div class="modal-box__text">Оставьте заявку и наш специалист <br>свяжется с Вами в течение 10 минут</div>
+                        <form class="form-inputs" action="">
+                            <label class="form__item">
+                                <div class="form__item-text">Ваше имя:</div>
+                                <input type="text" class="input">
+                                <span class="placeholder">ФИО</span>
+                            </label>
+                            <label class="form__item">
+                                <div class="form__item-text">Ваш номер телефона:</div>
+                                <input type="text" class="input">
+                                <span class="placeholder">+7 (999) 999-99-99</span>
+                            </label>
+                            <label class="form__item">
+                                <div class="form__item-text">Email:</div>
+                                <input type="email" class="input">
+                                <span class="placeholder">ВВЕДИТЕ ВАШ EMAIL</span>
+                            </label>
+                            <div class="form__item">
+                                <div class="form__item-text">Выберите раздел:</div>
+                                <select>
+                                    <option>Выберите раздел 1</option>
+                                    <option>Выберите раздел 2</option>
+                                    <option>Выберите раздел 3</option>
+                                    <option>Выберите раздел 4</option>
+                                </select>
+                            </div>
+                            <label class="form__item">
+                                <div class="form__item-text">Текст заявки:</div>
+                                <textarea class="textarea" name="text"></textarea>
+                            </label>
+                        </form>
+                        <div class="modal-box__btn btn">Отправить</div>
+                    </div>
+                </div>
+
                 <div class="areas-left__animation">
                     <div class="areas-left__animation-first">
                         <div class="animation-div-one">
@@ -267,20 +314,158 @@
 
     <section class="our-ratings">
         <div class="container">
-           
+            <div class="our-ratings-left">
+                <div class="our-ratings-left__small">О нас</div>
+                <div class="top-title">Мы в <span class="blue-text">рейтингах</span></div>
+                <div class="our-ratings-left__text text-normal">Наши рейтинги являются свидетельством нашей надежности, превосходного клиентского сервиса и результативности. Благодаря многолетнему опыту и экспертизе наших специалистов, мы занимаем лидирующие позиции в отрасли.</div>
+                <a href="" class="btn">подробнее о нас</a>
+            </div>
+            <div class="our-ratings-right desktop">
+                <img src="./img/main/our-ratings-ball.svg" alt="">
+            </div>
+            <div class="our-ratings-right mobile">
+                <div class="swiper partners-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-4.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="main-news">
         <div class="container">
-           
+            <div class="top-container">
+                <div class="top-title">Сводка <span class="blue-text">новостей</span></div>
+                <a href="" class="btn">смотреть все</a>
+            </div>
+            <div class="main-news__list">
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-1.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-2.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-3.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-4.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+            </div>
         </div>
     </section>
 
 </main>
 
 <footer class="footer" id="footer">
+    <img class="footer-backgroung" src="./img/footer.png" alt="">
     <div class="container">
+        <div class="footer-top">
+            <div class="footer-top__text">Оставить заявку на звонок</div>
+            <form class="form-inputs footer-top__inputs">
+                <label class="form__item">
+                    <input type="text" class="input">
+                    <span class="placeholder">Имя</span>
+                </label>
+                <label class="form__item">
+                    <input type="tel" class="input">
+                    <span class="placeholder">Номер телефона</span>
+                </label>
+            </form>
+            <a href="" class="footer-top__link link-arrow">отправить</a>
+        </div>
+        <div class="footer-center">
+            <div class="footer-center__items">
+                <a href="" class="footer-center__item">Услуги</a>
+                <a href="" class="footer-center__item">Правовая охрана</a>
+                <a href="" class="footer-center__item">Защита прав</a>
+                <a href="" class="footer-center__item">Передача прав</a>
+                <a href="" class="footer-center__item">Перевод документации</a>
+            </div>
+            <div class="footer-center__items">
+                <a href="" class="footer-center__item">О компании</a>
+                <a href="" class="footer-center__item">Команда</a>
+                <a href="" class="footer-center__item">Истории из жизни</a>
+                <a href="" class="footer-center__item">Мы в эфире</a>
+                <a href="" class="footer-center__item">Партнеры</a>
+            </div>
+            <div class="footer-center__items">
+                <a href="" class="footer-center__item">Контакты</a>
+                <a href="" class="footer-center__item">Адресс: <br>г. Москва, Шмитовский проезд, д. 2, стр. 2а</a>
+                <a href="" class="footer-center__item">Телефоны: (495) 225-5207, (495) 796-6391</a>
+                <div class="footer-center__item footer-center__item-socials">
+                    <a href="" class="footer-center__item-social">
+                        <img src="./img/icon/mail.svg" alt="">
+                    </a>
+                    <a href="" class="footer-center__item-social">
+                        <img src="./img/icon/telephone.svg" alt="">
+                    </a>
+                    <a href="" class="footer-center__item-social">
+                        <img src="./img/icon/skype.svg" alt="">
+                    </a>
+                    <a href="" class="footer-center__item-social">
+                        <img src="./img/icon/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-center__up">
+                <a href="#header"><img src="./img/footer-up.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__logo">
+                <img src="./img/Logo-ESP-small.svg" alt="">
+            </div>
+            <div class="footer-bottom__text">Политика конфиденциальности</div>
+            <div class="footer-bottom__dev">
+                <img src="./img/Logo-dev.svg" alt="">
+            </div>
+        </div>
     </div>
 </footer>
 
@@ -290,6 +475,7 @@
 <script src="./js/jquery.fancybox.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="./js/jquery.maskedinput.js"></script>
+<script src="./js/jquery.nice-select.js"></script>
 <script src="./js/inputmask.js"></script>
 <script src="./js/swiper.js"></script>
 <script src="./js/noframework.waypoints.min.js"></script>

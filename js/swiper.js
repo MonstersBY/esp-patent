@@ -60,7 +60,7 @@ const catalog_slider = new Swiper('.catalog__cards.swiper', {
     },
 });
 
-var swiper = new Swiper(".baner-swiper", {
+var baner_swiper = new Swiper(".baner-swiper", {
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: rem(28),
@@ -75,5 +75,14 @@ var swiper = new Swiper(".baner-swiper", {
     navigation: {
         nextEl: ".baner-swiper-next",
         prevEl: ".baner-swiper-prev",
+    },
+});
+
+var partners_swiper = new Swiper(".partners-swiper", {
+    spaceBetween: rem(1),
+    loop: true,
+    slidesPerView: 1.4,
+    autoplay: {
+        delay: 1000,
     },
 });

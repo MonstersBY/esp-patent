@@ -1,0 +1,85 @@
+.main-news {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 35.8rem;
+        display: flex;
+        flex-direction: column;
+
+        &-img {
+            width: 100%;
+            margin-bottom: 3.2rem;
+        }
+        &-date {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 150%;
+            text-transform: uppercase;
+            margin-bottom: 2.2rem;
+        }
+        &-title {
+            font-size: 3.5rem;
+            font-family: 'Cochineal';
+            font-weight: 400;
+            line-height: 123%;
+            letter-spacing: 0.21rem;
+            margin-bottom: 2.2rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .main-news {
+        .container {
+            position: relative;
+            padding-bottom: 18rem;
+        }
+        .btn {
+            position: absolute;
+            bottom: 0;
+            width: 71rem;
+        }
+        .top-container {
+            margin-bottom: 8rem;
+        }
+        .top-title {
+            width: 50rem;
+        }
+        &__list {
+            display: flex;
+            justify-content: unset;
+            gap: 4rem;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 2rem;
+        }
+        &__item {
+            width: 61rem;
+            display: flex;
+            flex-direction: column;
+            flex: none;
+    
+            &-img {
+                width: 100%;
+                margin-bottom: 2.4rem;
+            }
+            &-date {
+                font-size: 2.8rem;
+                font-weight: 400;
+                line-height: 150%;
+                text-transform: uppercase;
+                margin-bottom: 2.4rem;
+            }
+            &-title {
+                font-size: 5.6rem;
+                font-family: 'Cochineal';
+                font-weight: 400;
+                line-height: 107%;
+                letter-spacing: 1.68px;
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+}

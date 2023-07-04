@@ -12,6 +12,7 @@ html {
     line-height: 1.2;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,6 +35,16 @@ textarea {
     background-color: transparent;
     border: none;
     color: inherit;
+}
+select {
+    -webkit-animation: bugfix infinite 1s;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
 }
 a {
     color: unset;
@@ -130,7 +141,7 @@ section {
     }
 
     .container {
-        padding: 0 4rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
+        padding: 0 2rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
         width: 100%;
     }
 }

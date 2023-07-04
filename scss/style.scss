@@ -2,15 +2,28 @@
 
 @import "header";
 @import "footer";
+@import "modal";
+
+// main
 
 @import "baner";
 @import "areas";
 @import "our-numbers";
 @import "about-us";
+@import "our-ratings";
+@import "main-news";
 
 
-.container {
+
+
+
+
+
+
+section {
   margin-bottom: 20rem;
+}
+.container {
 
   & > .top-title {
     text-align: center;
@@ -26,6 +39,41 @@
   line-height: normal;
   text-transform: uppercase;
   width: fit-content;
+}
+.link-arrow {
+  color: #274497;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: fit-content;
+  position: relative;
+
+  &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 3.4rem;
+      height: 1.7rem;
+      background: url(../img/icon/arrow-right.svg) no-repeat;
+      top: 35%;
+      right: -5.5rem;
+  }
+}
+.text-normal {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6.8rem;
+
+  .btn {
+    height: fit-content;
+  }
 }
 .top-title {
   font-size: 7.5rem;
@@ -65,5 +113,92 @@
 @media (max-width: 48em) {
   .desktop {
     display: none;
+  }
+}
+@media (max-width: 48em) {
+  section {
+    margin-bottom: 25rem;
+  }
+  .container {
+  
+    & > .top-title {
+      text-align: center;
+    }
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+    border: 1px solid #0D0D0D;
+    border-radius: 6.9rem;
+    padding: 3.4rem 0;
+    font-size: 2.8rem;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+  .link-arrow {
+    color: #274497;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+  
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 6.4rem;
+        height: 2.7rem;
+        background: url(../img/icon/arrow-right.svg) no-repeat;
+        top: 20%;
+        right: -7.5rem;
+        background-size: contain;
+    }
+  }
+  .text-normal {
+    font-size: 2.8rem;
+    line-height: 140%;
+  }
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.8rem;
+  
+    .btn {
+      height: fit-content;
+    }
+  }
+  .top-title {
+    font-size: 8rem;
+    font-family: 'Cochineal';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%;
+    letter-spacing: 2.4px;
+  }
+  .blue-text {
+    color: #274497;
+  }
+  .arrow {
+    position: absolute;
+    top: 2.5rem;
+    width: 3.25rem;
+    height: 1px;
+    background-color: #274497;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1rem;
+      height: 1px;
+      right: -0.3rem;
+      background-color: #274497;
+      top: -0.3rem;
+      transform: rotate(45deg);
+    }
   }
 }
