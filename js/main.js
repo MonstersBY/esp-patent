@@ -45,23 +45,46 @@ $('.form__item input').on('input', function(evt) {
 	}
 });
 
-$('.modal-box .modal-box__close, .modal-box .modal-box__btn').on('click', function(evt) {
+
+$('.btn-sub-app, .modal-box-sub-app .modal-box__close, .modal-box-sub-app .modal-box__btn').on('click', function(evt) {
 	evt.preventDefault();
 	$('html').toggleClass('modal');
   
-	const $modal_box = $(this).closest('.modal-box')
-	const $container = $modal_box.children('.modal-box__container')
-	$modal_box.toggleClass('active');
-	$container.slideToggle();
-
-});
-
-$('.btn-sub-app').on('click', function(evt) {
-	evt.preventDefault();
-	$('html').toggleClass('modal');
-  
-	const $modal_box = $(this).siblings('.modal-box')
+	const $modal_box = $('.modal-box-sub-app')
 	const $container = $modal_box.children('.modal-box__container')
 	$modal_box.toggleClass('active');
 	$container.slideToggle();
 });
+
+$('.team-item__link, .team-item__img, .modal-box-contact .modal-box__close, .modal-box-contact .modal-box__btn').on('click', function(evt) {
+	evt.preventDefault();
+	$('html').toggleClass('modal');
+  
+	const $modal_box = $('.modal-box-contact')
+	const $container = $modal_box.children('.modal-box__container')
+	$modal_box.toggleClass('active');
+	$container.slideToggle();
+});
+
+
+// ymaps.ready(init);
+// function init(){
+// 	// Создание карты.
+// 	var map = new ymaps.Map("map", {
+// 		center: [55.759289, 37.556756],
+// 		zoom: 17,
+// 	},{
+// 		yandexMapDisablePoiInteractivity: true
+// 	});
+
+// 	map.controls.remove('geolocationControl');
+// 	map.controls.remove('searchControl');
+// 	map.controls.remove('trafficControl');
+// 	map.controls.remove('typeSelector');
+// 	map.controls.remove('fullscreenControl');
+// 	map.controls.remove('zoomControl');
+// 	map.controls.remove('rulerControl');
+// 	map.controls.remove('scrollZoom');
+// 	map.controls.remove('drag');
+// 	map.behaviors.disable(['scrollZoom']);
+// }

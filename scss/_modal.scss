@@ -32,6 +32,7 @@ html.modal {
     }
     &__close {
         background: url(../img/icon/close-circle.svg) no-repeat;
+        background-size: contain;
         width: 4rem;
         height: 4rem;
         position: absolute;
@@ -53,9 +54,6 @@ html.modal {
 }
 
 .form {
-    &-inputs {
-    }
-
     &__item {
         display: flex;
         flex-direction: column;
@@ -149,7 +147,7 @@ html.modal {
         &__container {
             display: none;
             position: absolute;
-            width: 64rem;
+            width: 95%;
             padding: 2.5rem 3.2rem 4rem;
             background: #EFF3F6;
             left: 0;
@@ -159,30 +157,29 @@ html.modal {
         }
         &__close {
             background: url(../img/icon/close-circle.svg) no-repeat;
-            width: 4rem;
-            height: 4rem;
+            background-size: contain;
+            width: 8rem;
+            height: 8rem;
             position: absolute;
             right: 3.2rem;
             top: 2.5rem;
             cursor: pointer;
         }
         &__text {
-            font-size: 1.8rem;
+            font-size: 2.8rem;
             font-weight: 400;
             line-height: 140%; 
             margin-bottom: 3rem;
         }
     
         &__btn.btn {
+            position: unset;
             border: 1px solid #274497;
             color: #274497;
         }
     }
     
     .form {
-        &-inputs {
-        }
-    
         &__item {
             display: flex;
             flex-direction: column;
@@ -239,8 +236,8 @@ html.modal {
                 line-height: 150%;
     
                 &.open:after {
-                    transform: rotate(-180deg);
-                    top: 40%;
+                    transform: rotate(-45deg);
+                    top: 50%;
                 }
     
                 &:after {
@@ -249,7 +246,7 @@ html.modal {
                     width: 1.2rem;
                     height: 0.8rem;
                     border: none;
-                    transform: rotate(0);
+                    transform: rotate(135deg);
                 }
             }
         }

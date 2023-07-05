@@ -297,6 +297,10 @@
                 bottom: 0;
                 width: 71rem;
             }
+            .modal-box__btn.btn {
+                position: unset;
+                width: 100%;
+            }
         }
     
         &-right {

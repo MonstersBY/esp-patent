@@ -1,10 +1,11 @@
 .baner {
-    margin-top: 2.6rem;
+    margin-top: 2.6rem !important;
     margin-bottom: 24rem;
     position: relative;
     
     .container {
         width: 100%;
+        position: relative;
     }
     &-swiper {
         position: relative;
@@ -14,9 +15,26 @@
         align-items: center;
     }
 
+    &-swiper-text {
+        position: absolute;
+        display: flex;
+        top: 26rem;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+        img {
+            width: 52.1rem;
+        }
+    }
+
     .swiper-slide {
         width: 37.221%;
         width: 31.5292%;
+        width: 39.84%;
+        display: flex;
 
         &.swiper-slide-active {
             width: 47%;
@@ -24,6 +42,7 @@
             .baner-circle {
                 height: 75.8rem;
                 border: none;
+                width: 100%;
             }
             img {
                 width: 100%;
@@ -32,11 +51,13 @@
         }
         .baner-circle {
             height: 60rem;
+            width: 60rem;
             border: 1.2px solid #B1C8EE;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 0 auto;
         }
         img {
             width: 48.9rem;
@@ -131,6 +152,23 @@
         }
         .swiper-wrapper {
             align-items: center;
+        }
+
+        &-swiper-text {
+            position: absolute;
+            display: flex;
+            top: 26rem;
+            gap: 1.87rem;
+            width: 106%;
+            justify-content: space-between;
+            margin: 0 auto;
+            left: -5rem;
+            right: 0;
+            overflow: hidden;
+    
+            img {
+                width: 42.2rem;
+            }
         }
     
         .swiper-slide {

@@ -86,3 +86,15 @@ var partners_swiper = new Swiper(".partners-swiper", {
         delay: 1000,
     },
 });
+
+const life_storiesDate = [2018, 2017, 2014, 2013, 2012, 2010, 2009, 2008, 2006, 2005, 2004, 2002, 2001, 200, 1999]
+var life_stories_swiper = new Swiper(".life-stories-swiper", {
+    loop: true,
+    pagination: {
+        el: ".life-stories-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + life_storiesDate[index] + "</span>";
+        },
+    },
+});
