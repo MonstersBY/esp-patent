@@ -1,0 +1,113 @@
+.services {
+    .top-title {
+        margin-bottom: 6.8rem;
+    }
+    &-container {
+        display: flex;
+        gap: 6rem;
+        margin-bottom: 14rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-left {
+        width: 30.832%;
+        font-size: 3.5rem;
+        font-family: 'Cochineal';
+        line-height: 111%;
+        letter-spacing: 0.21rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-img {
+        width: 35.8rem;
+        height: 21.9rem;
+
+        svg {
+            width: 35.8rem;
+            height: 21.9rem;
+        }
+    }
+    &-right {
+        flex: 1;
+        font-size: 1.8rem;
+        line-height: 150%;
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .services-item {
+            width: 47.11%;
+            margin-bottom: 4rem;
+            display: flex;
+            gap: 4rem;
+            position: relative;
+
+            &:hover {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 65.8%;
+                    height: 1px;
+                    background-color: #274497;
+                    top: -1px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 8.5rem;
+                    height: 8.5rem;
+                    background: url(../img/icon/arrow-right-circle.svg) no-repeat;
+                    background-size: cover;
+                    top: -4.5rem;
+                    right: 3rem;
+                }
+            }
+        }
+    }
+    &-item {
+        width: 100%;
+        display: block;
+        padding-top: 2.2rem;
+        border-top: 1px solid #C0C0C0;
+
+        &__number {
+            color: #949494;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .services {
+        .top-title {
+            margin-bottom: 8rem;
+        }
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+            margin-bottom: 0;
+        }
+        &-item {
+            width: 100%;
+            display: block;
+            padding-top: 8rem;
+            border-top: 1px solid #C0C0C0;
+
+            font-size: 5.6rem;
+            font-family: 'Cochineal';
+            line-height: 123%;
+            letter-spacing: 0.336;
+
+            &__text {
+               margin-bottom: 4rem; 
+            }
+        }
+    }
+}

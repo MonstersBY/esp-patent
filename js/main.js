@@ -88,3 +88,10 @@ $('.team-item__link, .team-item__img, .modal-box-contact .modal-box__close, .mod
 // 	map.controls.remove('drag');
 // 	map.behaviors.disable(['scrollZoom']);
 // }
+
+$('.services-container .services-right').each(function(x){
+	$(this).find('.services-item__number').each(function(x){
+		x<9 ? $(this).html('0'+(x+1)) : $(this).html(x+1)
+		
+	})
+})

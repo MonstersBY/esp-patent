@@ -5,7 +5,6 @@
 @import "modal";
 
 // main
-
 @import "baner";
 @import "areas";
 @import "our-numbers";
@@ -22,6 +21,11 @@
 // contacts
 @import "contacts";
 
+// partners
+@import "partners";
+
+// services
+@import "services";
 
 .swiper {
   overflow: hidden;

@@ -1,0 +1,139 @@
+.partners {
+    .top-title {
+        margin-bottom: 6.8rem;
+    }
+    &-slide {
+        display: flex;
+        align-items: center;
+    }
+    &-container {
+        position: relative;
+    }
+    &-left {
+        width: 32.1rem;
+        display: flex;
+        flex-direction: column;
+        font-family: Cochineal;
+        font-style: normal;
+        font-weight: 400;
+        gap: 3.2rem;
+
+        &__text {
+            font-size: 3.5rem;
+            line-height: 111%;
+            letter-spacing: 0.21rem;
+        }
+        &__page {
+            font-size: 2rem;
+            line-height: 100%;
+            letter-spacing: 0.12rem;
+            color: #949494;
+
+            span {
+                font-size: 3.5rem;
+                line-height: 111%;
+                letter-spacing: 0.21rem;
+                color: #274497;
+            }
+        }
+    }
+    &-right {
+        position: relative;
+        margin-left: 26.1rem;
+
+        &__img {
+            width: 44.8rem;
+            height: 44.8rem;
+            margin-bottom: 6rem;
+        }
+
+        &__text {
+            width: 35.6rem;
+            color: #949494;
+            font-size: 1.8rem;
+            line-height: 140%;
+            margin-left: 22rem;
+        }
+    }
+    &-swiper-next, &-swiper-prev {
+        width: 3.25rem;
+        &::after {
+            content: unset;
+        }
+    }
+    &-swiper-next {
+        right: 0rem;
+    }
+    &-swiper-prev {
+        left: auto;
+        right: 5.5rem;
+
+        .arrow::after {
+            right: auto;
+            left: -0.3rem;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .partners {
+        .top-title {
+            margin-bottom: 8rem;
+        }
+        &-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8rem;
+        }
+        &-container {
+            position: relative;
+        }
+        &-left {
+            width: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 6.4rem;
+    
+            &__text {
+                font-size: 5.6rem;
+                line-height: 123%;
+                letter-spacing: 0.336rem;
+            }
+            &__page {
+                font-size: 3.6rem;
+                line-height: 107%;
+                letter-spacing: 0.216rem;
+    
+                span {
+                    font-size: 5.6rem;
+                    line-height: 123%;
+                    letter-spacing: 0.336rem;
+                    margin-right: 2.2rem;
+                }
+            }
+        }
+        &-right {
+            position: relative;
+            margin-left: 0;
+    
+            &__img {
+                width: 56rem;
+                height: 56rem;
+                margin: 0 auto 8rem;
+            }
+    
+            &__text {
+                width: auto;
+                font-size: 2.8rem;
+                line-height: 140%;
+                margin-left: 0;
+            }
+        }
+        &-swiper-next, &-swiper-prev {
+            display: none;
+        }
+    }
+}

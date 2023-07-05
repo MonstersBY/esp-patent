@@ -78,7 +78,7 @@ var baner_swiper = new Swiper(".baner-swiper", {
     },
 });
 
-var partners_swiper = new Swiper(".partners-swiper", {
+var partners_main_swiper = new Swiper(".partners-main-swiper", {
     spaceBetween: rem(1),
     loop: true,
     slidesPerView: 1.4,
@@ -98,3 +98,19 @@ var life_stories_swiper = new Swiper(".life-stories-swiper", {
         },
     },
 });
+
+var partners_swiper = new Swiper(".partners-swiper", {
+    autoplay: {
+        delay: 5000,
+    },
+    navigation: {
+        nextEl: ".partners-swiper-next",
+        prevEl: ".partners-swiper-prev",
+    },
+});
+
+
+$('.partners-left__page').html(`<span>01</span>/0${$('.partners-left__page').length}`)
+partners_swiper.on('slideChange', function (x) {
+    $('.partners-left__page span')[x.activeIndex].innerHTML = `0${(x.activeIndex+1)}`
+})
