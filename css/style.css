@@ -1941,6 +1941,21 @@ html.modal {
 .about-us__item:nth-child(2n) .about-us__img::after {
   background: #FFF;
 }
+.about-us__item:nth-child(2) img {
+  width: 35rem;
+  height: 59rem;
+  bottom: -14rem;
+}
+.about-us__item:nth-child(3) img {
+  width: 40rem;
+  height: 60rem;
+  bottom: -12rem;
+}
+.about-us__item:nth-child(4) img {
+  width: 40rem;
+  height: 70rem;
+  bottom: -23rem;
+}
 .about-us__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2025,6 +2040,21 @@ html.modal {
   }
   .about-us__item:nth-child(2n) .about-us__img::after {
     background: #FFF;
+  }
+  .about-us__item:nth-child(2) img {
+    width: 61rem;
+    height: 115rem;
+    bottom: -34rem;
+  }
+  .about-us__item:nth-child(3) img {
+    width: 67rem;
+    height: 105rem;
+    bottom: -22rem;
+  }
+  .about-us__item:nth-child(4) img {
+    width: 61rem;
+    height: 127rem;
+    bottom: -41rem;
   }
   .about-us__text {
     display: -webkit-box;
@@ -3111,6 +3141,90 @@ html.modal {
   margin-left: auto;
 }
 
+.services-other .top-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 6.8rem;
+}
+.services-other .top-title span {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  color: #274497;
+}
+.services-other-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 6rem;
+}
+.services-other-item {
+  width: 22.2%;
+  height: 30.9rem;
+  position: relative;
+  border: 1px solid #274497;
+  overflow: hidden;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.services-other-item:hover {
+  border: 1px solid #EFEFF2;
+}
+.services-other-item:hover .services-other-item__img {
+  top: 0;
+}
+.services-other-item:hover .services-other-item__count, .services-other-item:hover .services-other-item__title {
+  color: #FFF;
+}
+.services-other-item.empty {
+  padding: 0;
+  border: unset;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.services-other-item__img {
+  position: absolute;
+  z-index: -1;
+  top: -31rem;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.services-other-item__count {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  line-height: 111%;
+  letter-spacing: 0.42rem;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.services-other-item__title {
+  font-size: 1.8rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
 @media (max-width: 48em) {
   .services .top-title {
     margin-bottom: 8rem;
@@ -3138,6 +3252,303 @@ html.modal {
   }
   .services-item__text {
     margin-bottom: 4rem;
+  }
+  .services-other .top-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 6.8rem;
+  }
+  .services-other .top-title span {
+    display: none;
+  }
+  .services-other-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 4rem;
+  }
+  .services-other-item {
+    width: auto;
+    height: auto;
+    border: unset;
+    border-bottom: 1px solid #C0C0C0;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: unset;
+    transition: unset;
+    gap: 5.4rem;
+  }
+  .services-other-item:first-child {
+    border-top: 1px solid #C0C0C0;
+  }
+  .services-other-item:hover {
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 1px solid #C0C0C0;
+  }
+  .services-other-item:hover .services-other-item__count, .services-other-item:hover .services-other-item__title {
+    color: inherit;
+  }
+  .services-other-item.empty {
+    display: none;
+  }
+  .services-other-item__img {
+    display: none;
+  }
+  .services-other-item__count {
+    font-family: "Gilroy";
+    font-size: 2.8rem;
+    line-height: 150%;
+    letter-spacing: unset;
+    text-transform: uppercase;
+    -webkit-transition: unset;
+    transition: unset;
+    color: #949494;
+  }
+  .services-other-item__title {
+    font-size: 2.8rem;
+    -webkit-transition: unset;
+    transition: unset;
+    margin-bottom: 4rem;
+  }
+}
+.handbook .top-title {
+  margin-bottom: 6.8rem;
+}
+.handbook-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+  margin-bottom: 12rem;
+}
+.handbook-left {
+  width: 49.7rem;
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+}
+.handbook-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.handbook-item {
+  width: 47.11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+.handbook-item__img {
+  height: 40.7rem;
+  width: 20.35rem;
+}
+.handbook-item__img img {
+  border-top-left-radius: 21rem;
+  border-bottom-left-radius: 21rem;
+}
+.handbook-item__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.handbook-item__title {
+  font-family: "Cochineal";
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0.12rem;
+}
+
+@media (max-width: 48em) {
+  .handbook .top-title {
+    margin-bottom: 8rem;
+  }
+  .handbook-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8rem;
+    margin-bottom: 12rem;
+    padding-top: 4rem;
+    border-top: 1px solid #C0C0C0;
+  }
+  .handbook-left {
+    width: auto;
+    font-size: 5.6rem;
+    line-height: 123%;
+    letter-spacing: 0.336rem;
+  }
+  .handbook-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .handbook-item {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 0;
+  }
+  .handbook-item__img {
+    height: 36rem;
+    width: 18rem;
+  }
+  .handbook-item__img img {
+    border-top-left-radius: 21rem;
+    border-bottom-left-radius: 21rem;
+  }
+  .handbook-item__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .handbook-item__title {
+    font-size: 3.6rem;
+    line-height: 107%;
+    letter-spacing: 0.216rem;
+  }
+}
+.broadcast .container > .top-title {
+  text-align: left;
+  margin-bottom: 6.8rem;
+}
+.broadcast-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.broadcast-item {
+  border-top: 1px solid #C0C0C0;
+  padding-top: 2.2rem;
+  width: 30.832%;
+  display: block;
+}
+.broadcast-item__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.8rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #949494;
+  margin-bottom: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.broadcast-item__title {
+  font-size: 2.4rem;
+  font-family: "Gilroy Medium";
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+}
+
+@media (max-width: 48em) {
+  .broadcast .container > .top-title {
+    margin-bottom: 8rem;
+  }
+  .broadcast-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .broadcast-item {
+    border-top: 1px solid #C0C0C0;
+    padding-top: 4.4rem;
+    width: auto;
+  }
+  .broadcast-item__date {
+    font-size: 2.8rem;
+    margin-bottom: 6rem;
+  }
+  .broadcast-item__title {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 400;
+    margin-bottom: 4.4rem;
   }
 }
 .swiper {

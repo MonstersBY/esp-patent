@@ -2,10 +2,7 @@ $('select').niceSelect();
 
 $('.header__burger').on('click', function(evt) {
 	let $this = $(this);
-
-	// $('.header__menu-list').toggleClass('active');
 	$('.header__menu-container').slideToggle();
-
 });
 
 $(".areas-right__item").mouseover(function(){
@@ -92,6 +89,14 @@ $('.team-item__link, .team-item__img, .modal-box-contact .modal-box__close, .mod
 $('.services-container .services-right').each(function(x){
 	$(this).find('.services-item__number').each(function(x){
 		x<9 ? $(this).html('0'+(x+1)) : $(this).html(x+1)
-		
 	})
 })
+
+
+if($('.services-other .top-title span').length) {
+	$('.services-other .top-title span').html(`${$('.services-other .services-other-item__count').length}`)
+	$('.services-other .services-other-item__count').each(function(x){
+		x<9 ? $(this).html('0'+(x+1)) : $(this).html(x+1)
+	})
+}
+

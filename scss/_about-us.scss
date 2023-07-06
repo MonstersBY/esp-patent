@@ -14,6 +14,21 @@
         &:nth-child(2n) .about-us__img::after {
             background: #FFF;
         }
+        &:nth-child(2)  img {
+            width: 35rem;
+            height: 59rem;
+            bottom: -14rem;
+        }
+        &:nth-child(3)  img {
+            width: 40rem;
+            height: 60rem;
+            bottom: -12rem;
+        }
+        &:nth-child(4)  img {
+            width: 40rem;
+            height: 70rem;
+            bottom: -23rem;
+        }
     }
     &__text {
         display: flex;
@@ -89,6 +104,21 @@
     
             &:nth-child(2n) .about-us__img::after {
                 background: #FFF;
+            }
+            &:nth-child(2)  img {
+                width: 61rem;
+                height: 115rem;
+                bottom: -34rem;
+            }
+            &:nth-child(3)  img {
+                width: 67rem;
+                height: 105rem;
+                bottom: -22rem;
+            }
+            &:nth-child(4)  img {
+                width: 61rem;
+                height: 127rem;
+                bottom: -41rem;
             }
         }
         &__text {
