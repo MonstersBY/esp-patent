@@ -2486,7 +2486,6 @@ html.modal {
   display: -ms-flexbox;
   display: flex;
   gap: 25.1rem;
-  cursor: context-menu;
 }
 .life-stories-right__item:first-child {
   border-top: 1px solid #D9D9D9;
@@ -2570,6 +2569,184 @@ html.modal {
   margin: 0 auto;
   top: -1rem;
 }
+.life-stories_inner__title {
+  font-family: "Cochineal";
+  font-size: 7.5rem;
+  line-height: 100%;
+  letter-spacing: 0.45rem;
+  margin-bottom: 6.8rem;
+}
+.life-stories_inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+}
+.life-stories_inner-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.life-stories_inner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.7rem;
+  margin-bottom: 2rem;
+}
+.life-stories_inner-top__left {
+  width: 18.2rem;
+  color: #949494;
+  font-size: 1.8rem;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.life-stories_inner-top__left-img {
+  width: 13.9rem;
+  height: 13.9rem;
+  margin-bottom: 3rem;
+}
+.life-stories_inner-top__left-img img {
+  width: 100%;
+  height: 100%;
+}
+.life-stories_inner-top__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.life-stories_inner-top__right-title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 4rem;
+  color: #949494;
+}
+.life-stories_inner-top__right-text span {
+  display: inline-block;
+  height: 2rem;
+  width: 9.52rem;
+}
+.life-stories_inner-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+.life-stories_inner-center-left {
+  width: 51.8rem;
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.life-stories_inner-center-left span {
+  display: block;
+  width: 8rem;
+  height: 0.8rem;
+  background: #274497;
+}
+.life-stories_inner-center-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.life-stories_inner-text {
+  margin-bottom: 6rem;
+}
+.life-stories_inner-bottom__title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 4rem;
+}
+.life-stories_inner-bottom__list li {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #D9D9D9;
+  padding-left: 5.6rem;
+  position: relative;
+}
+.life-stories_inner-bottom__list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #274497;
+  border-radius: 50%;
+  top: 0.5rem;
+  left: 0;
+}
+.life-stories_inner-bottom__list li:last-child {
+  border-bottom: unset;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.life-stories_inner-right {
+  width: 35.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.2rem;
+}
+.life-stories_inner-right-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.life-stories_inner-right-item__img {
+  width: 35.8rem;
+  height: 19.8rem;
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.life-stories_inner-right-item__img img {
+  width: 21.9rem;
+  height: 18rem;
+}
+.life-stories_inner-right-item__text {
+  width: 21.8rem;
+}
 
 @media (max-width: 48em) {
   .life-stories .container {
@@ -2628,7 +2805,6 @@ html.modal {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 3.2rem;
-    cursor: context-menu;
     margin: 29.4rem 2rem 0;
   }
   .life-stories-right__item:first-child {
@@ -3400,6 +3576,57 @@ html.modal {
   line-height: 100%;
   letter-spacing: 0.12rem;
 }
+.handbook_inner__title {
+  font-size: 2.6rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding: 2.5rem 0;
+  position: relative;
+  margin-bottom: 8rem;
+}
+.handbook_inner__title span {
+  display: block;
+  width: 91.5rem;
+  margin: 0 auto;
+}
+.handbook_inner__title::before, .handbook_inner__title::after {
+  content: "";
+  display: block;
+  width: 56%;
+  height: 2px;
+  background: #D9D9D9;
+  position: absolute;
+}
+.handbook_inner__title::before {
+  top: 0;
+  left: 0;
+}
+.handbook_inner__title::after {
+  bottom: 0;
+  right: 0;
+}
+.handbook_inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.handbook_inner__img {
+  width: 49.7rem;
+  height: 60rem;
+}
+.handbook_inner__img img {
+  width: 100%;
+  height: 100%;
+}
+.handbook_inner__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 
 @media (max-width: 48em) {
   .handbook .top-title {
@@ -3591,6 +3818,7 @@ section {
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
+  padding-right: 5.5rem;
 }
 .link-arrow::after {
   content: "";
@@ -3599,8 +3827,33 @@ section {
   width: 3.4rem;
   height: 1.7rem;
   background: url(../img/icon/arrow-right.svg) no-repeat;
+  top: 40%;
+  right: 0;
+}
+
+.top-back {
+  display: block;
+  color: #274497;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  padding-left: 5.5rem;
+  margin-bottom: 6rem;
+}
+.top-back::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.4rem;
+  height: 1.7rem;
+  background: url(../img/icon/arrow-left.svg) no-repeat;
   top: 35%;
-  right: -5.5rem;
+  left: 0;
 }
 
 .text-normal {
