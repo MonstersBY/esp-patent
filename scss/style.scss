@@ -42,6 +42,8 @@
 // inner
 @import "inner";
 
+// 404
+@import "404";
 
 
 .swiper {
@@ -112,7 +114,7 @@ section {
     background: url(../img/icon/arrow-left.svg) no-repeat;
     top: 35%;
     left: 0;
-}
+  }
 }
 .text-normal {
   font-size: 1.8rem;
@@ -202,6 +204,7 @@ section {
     text-transform: uppercase;
     width: fit-content;
     position: relative;
+    padding-right: 9.2rem;
   
     &::after {
         content: '';
@@ -211,8 +214,31 @@ section {
         height: 2.7rem;
         background: url(../img/icon/arrow-right.svg) no-repeat;
         top: 20%;
-        right: -7.5rem;
+        right: 0;
         background-size: contain;
+    }
+  }
+  .top-back {
+    display: block;
+    color: #274497;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+    padding-left: 9.2rem;
+    margin-bottom: 6rem;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 6.4rem;
+      height: 2.7rem;
+      background: url(../img/icon/arrow-left.svg) no-repeat;
+      top: 35%;
+      left: 0;
     }
   }
   .text-normal {

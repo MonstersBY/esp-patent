@@ -762,6 +762,16 @@ html.modal {
   top: 2.5rem;
   cursor: pointer;
 }
+.modal-box__title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  color: #274497;
+  margin-bottom: 0.6rem;
+}
 .modal-box__text {
   font-size: 1.8rem;
   font-weight: 400;
@@ -771,6 +781,27 @@ html.modal {
 .modal-box__btn.btn {
   border: 1px solid #274497;
   color: #274497;
+}
+.modal-box .success {
+  padding: 8.1rem 3.2rem 8.2rem;
+}
+.modal-box .success .modal-box__img {
+  width: 9.8rem;
+  height: 9.8rem;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+}
+.modal-box .success .modal-box__text {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .form__item {
@@ -880,7 +911,18 @@ html.modal {
     top: 2.5rem;
     cursor: pointer;
   }
+  .modal-box__title {
+    font-family: "Cochineal";
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 0.336rem;
+    color: #274497;
+    margin-bottom: 1.2rem;
+  }
   .modal-box__text {
+    width: 36.6rem;
     font-size: 2.8rem;
     font-weight: 400;
     line-height: 140%;
@@ -2907,6 +2949,219 @@ html.modal {
     margin: 0 auto;
     top: -2rem;
   }
+  .life-stories_inner__title {
+    font-size: 5.8rem;
+    line-height: 123%;
+    letter-spacing: 0.336rem;
+    margin-bottom: 8rem;
+  }
+  .life-stories_inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .life-stories_inner-left {
+    width: auto;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .life-stories_inner-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4.8rem;
+    margin-bottom: 8rem;
+  }
+  .life-stories_inner-top__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    color: #949494;
+    font-size: 2.8rem;
+    margin-bottom: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .life-stories_inner-top__left-img {
+    width: 27.8rem;
+    height: 27.8rem;
+    margin-bottom: 0;
+  }
+  .life-stories_inner-top__left-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .life-stories_inner-top__left-text {
+    width: 35.4rem;
+  }
+  .life-stories_inner-top__right {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .life-stories_inner-top__right-title {
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: 0.24rem;
+    margin-bottom: 6.4rem;
+    color: #949494;
+  }
+  .life-stories_inner-top__right-text span {
+    display: inline-block;
+    height: 2rem;
+    width: 9.52rem;
+  }
+  .life-stories_inner-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8rem;
+    margin-bottom: 4rem;
+  }
+  .life-stories_inner-center-left {
+    width: auto;
+    font-family: "Cochineal";
+    font-size: 5.8rem;
+    line-height: 123%;
+    letter-spacing: 0.336rem;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 3.2rem;
+  }
+  .life-stories_inner-center-left span {
+    display: block;
+    width: 16rem;
+    height: 1.6rem;
+    background: #274497;
+  }
+  .life-stories_inner-center-right {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .life-stories_inner-center-right.text-normal {
+    font-size: 3.6rem;
+  }
+  .life-stories_inner-center-item {
+    margin: 2.4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .life-stories_inner-text {
+    margin-bottom: 12rem;
+  }
+  .life-stories_inner-bottom__title {
+    font-size: 5.8rem;
+    line-height: 123%;
+    letter-spacing: 0.336rem;
+    margin-bottom: 8rem;
+  }
+  .life-stories_inner-bottom__list li {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #D9D9D9;
+    padding-left: 7.2rem;
+    position: relative;
+  }
+  .life-stories_inner-bottom__list li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 1px solid #274497;
+    border-radius: 50%;
+    top: 0.5rem;
+    left: 0;
+  }
+  .life-stories_inner-bottom__list li:last-child {
+    border-bottom: unset;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .life-stories_inner-right {
+    width: 35.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+  .life-stories_inner-right-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.2rem;
+    width: 34.4rem;
+  }
+  .life-stories_inner-right-item__img {
+    width: 100%;
+    height: 20rem;
+    background: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .life-stories_inner-right-item__img img {
+    width: 21.9rem;
+    height: 18rem;
+  }
+  .life-stories_inner-right-item__text {
+    width: auto;
+  }
 }
 .contacts .container > .top-title {
   text-align: left;
@@ -3727,6 +3982,61 @@ html.modal {
     margin-bottom: 4.4rem;
   }
 }
+.news-container {
+  padding: 6rem 0 0;
+  border-top: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+  margin-bottom: 4.8rem;
+}
+.news .top-title {
+  margin-bottom: 6.8rem;
+}
+.news__btn {
+  margin: 0 auto;
+}
+.news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.news__item {
+  width: 22.209%;
+  margin-bottom: 6rem;
+}
+.news__item-img {
+  width: 35.8rem;
+  height: 30.2rem;
+  margin-bottom: 3.2rem;
+}
+.news__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news__item-date {
+  color: #949494;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+}
+.news__item-title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 2.2rem;
+}
 .news .inner__text {
   font-size: 1.8rem;
   font-style: normal;
@@ -3881,6 +4191,110 @@ html.modal {
   .inner__text-logo img {
     width: auto;
     height: 100%;
+  }
+}
+.error-page {
+  background: url('data:image/svg+xml;utf8,<svg width="535" height="203"  viewBox="0 0 491 203" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49.584 123.204V151.632H124.38V198H0.180001V4.79999H123V50.892H49.584V77.664H116.1V123.204H49.584ZM239.823 202.14C210.751 202.14 186.647 192.572 167.511 173.436C148.559 154.3 139.083 130.288 139.083 101.4C139.083 72.512 148.559 48.592 167.511 29.64C186.463 10.32 210.567 0.659991 239.823 0.659991C257.303 0.659991 273.495 4.79999 288.399 13.08C303.303 21.36 314.987 32.492 323.451 46.476L280.671 71.04C276.991 64.232 271.471 58.896 264.111 55.032C256.935 50.984 248.839 48.96 239.823 48.96C224.551 48.96 212.039 53.836 202.287 63.588C192.903 73.34 188.211 85.944 188.211 101.4C188.211 117.224 192.903 129.92 202.287 139.488C211.855 149.056 224.367 153.84 239.823 153.84C248.839 153.84 256.935 151.908 264.111 148.044C271.471 143.996 276.991 138.476 280.671 131.484L323.451 156.324C314.987 170.492 303.303 181.716 288.399 189.996C273.679 198.092 257.487 202.14 239.823 202.14ZM341.137 4.79999H490.177V198H440.773V52.548H390.541V198H341.137V4.79999Z" fill="white"/></svg>');
+  background-repeat: repeat-x;
+  background-position: -2% bottom;
+  padding-bottom: 14rem;
+}
+.error-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.error-page-left {
+  width: 53.4rem;
+}
+.error-page__number {
+  font-family: "Cochineal";
+  font-size: 22.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 1.356rem;
+  margin-bottom: 4.5rem;
+}
+.error-page__title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 2.4rem;
+}
+.error-page__text {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 4.5rem;
+  color: #949494;
+}
+.error-page-right {
+  width: 69.6157rem;
+  height: 69.6187rem;
+}
+
+@media (max-width: 48em) {
+  .error-page {
+    background: url('data:image/svg+xml;utf8,<svg width="211" height="86"  viewBox="0 0 491 203" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49.584 123.204V151.632H124.38V198H0.180001V4.79999H123V50.892H49.584V77.664H116.1V123.204H49.584ZM239.823 202.14C210.751 202.14 186.647 192.572 167.511 173.436C148.559 154.3 139.083 130.288 139.083 101.4C139.083 72.512 148.559 48.592 167.511 29.64C186.463 10.32 210.567 0.659991 239.823 0.659991C257.303 0.659991 273.495 4.79999 288.399 13.08C303.303 21.36 314.987 32.492 323.451 46.476L280.671 71.04C276.991 64.232 271.471 58.896 264.111 55.032C256.935 50.984 248.839 48.96 239.823 48.96C224.551 48.96 212.039 53.836 202.287 63.588C192.903 73.34 188.211 85.944 188.211 101.4C188.211 117.224 192.903 129.92 202.287 139.488C211.855 149.056 224.367 153.84 239.823 153.84C248.839 153.84 256.935 151.908 264.111 148.044C271.471 143.996 276.991 138.476 280.671 131.484L323.451 156.324C314.987 170.492 303.303 181.716 288.399 189.996C273.679 198.092 257.487 202.14 239.823 202.14ZM341.137 4.79999H490.177V198H440.773V52.548H390.541V198H341.137V4.79999Z" fill="white"/></svg>');
+    background-repeat: repeat-x;
+    background-position: -2% 90%;
+    padding-bottom: 0;
+  }
+  .error-page .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12rem;
+  }
+  .error-page-left {
+    width: auto;
+    text-align: center;
+  }
+  .error-page__number {
+    font-family: "Cochineal";
+    font-size: 40rem;
+    letter-spacing: 2.4rem;
+    margin-bottom: 4.4rem;
+  }
+  .error-page__title {
+    font-family: "Cochineal";
+    font-size: 5.8rem;
+    line-height: 123%;
+    letter-spacing: 0.336rem;
+    margin-bottom: 6.4rem;
+  }
+  .error-page__text {
+    font-size: 2.8rem;
+    margin-bottom: 6.4rem;
+  }
+  .error-page__link {
+    margin: 0 auto;
+  }
+  .error-page-right {
+    width: 42rem;
+    height: 42rem;
+    margin: 0 auto;
   }
 }
 .swiper {
@@ -4059,6 +4473,7 @@ section {
     width: -moz-fit-content;
     width: fit-content;
     position: relative;
+    padding-right: 9.2rem;
   }
   .link-arrow::after {
     content: "";
@@ -4068,8 +4483,32 @@ section {
     height: 2.7rem;
     background: url(../img/icon/arrow-right.svg) no-repeat;
     top: 20%;
-    right: -7.5rem;
+    right: 0;
     background-size: contain;
+  }
+  .top-back {
+    display: block;
+    color: #274497;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    padding-left: 9.2rem;
+    margin-bottom: 6rem;
+  }
+  .top-back::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6.4rem;
+    height: 2.7rem;
+    background: url(../img/icon/arrow-left.svg) no-repeat;
+    top: 35%;
+    left: 0;
   }
   .text-normal {
     font-size: 2.8rem;

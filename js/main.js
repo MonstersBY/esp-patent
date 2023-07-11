@@ -43,24 +43,43 @@ $('.form__item input').on('input', function(evt) {
 });
 
 
-$('.btn-sub-app, .modal-box-sub-app .modal-box__close, .modal-box-sub-app .modal-box__btn').on('click', function(evt) {
+$('.btn-sub-app').on('click', function(evt) {
 	evt.preventDefault();
 	$('html').toggleClass('modal');
   
 	const $modal_box = $('.modal-box-sub-app')
-	const $container = $modal_box.children('.modal-box__container')
+	const $container = $modal_box.children('.filling')
 	$modal_box.toggleClass('active');
 	$container.slideToggle();
 });
 
-$('.team-item__link, .team-item__img, .modal-box-contact .modal-box__close, .modal-box-contact .modal-box__btn').on('click', function(evt) {
+$('.team-item__link, .team-item__img').on('click', function(evt) {
 	evt.preventDefault();
 	$('html').toggleClass('modal');
   
 	const $modal_box = $('.modal-box-contact')
-	const $container = $modal_box.children('.modal-box__container')
+	const $container = $modal_box.children('.filling')
 	$modal_box.toggleClass('active');
 	$container.slideToggle();
+});
+$('.modal-box .modal-box__close').on('click', function(evt) {
+	evt.preventDefault();
+	$('html').toggleClass('modal');
+	console.log($(this).parents('.modal-box__container'))
+  
+	const $modal_box = $('.modal-box')
+	const $container = $(this).parents('.modal-box__container')
+	$modal_box.removeClass('active');
+	$container.slideToggle();
+})
+$('.modal-box .modal-box__btn').on('click', function(evt) {
+	evt.preventDefault();
+  
+	const $modal_box = $('.modal-box')
+	const $container = $modal_box.children('.filling')
+	const $success = $modal_box.children('.success')
+	$container.slideToggle();
+	$success.slideToggle();
 });
 
 
@@ -103,4 +122,12 @@ if($('.services-other .top-title span').length) {
 
 if($('.inner .inner__text-logo').length) {
 	$('.inner-container').css("padding-top", "13.2rem")
+}
+
+if($('.news').length) {
+	$('.news__item-img').each(function(x){
+		if(!$(this).children('img').attr('src')) {
+			$(this).css("display", "none")
+		}
+	})
 }
