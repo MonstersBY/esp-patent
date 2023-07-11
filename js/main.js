@@ -100,3 +100,7 @@ if($('.services-other .top-title span').length) {
 	})
 }
 
+
+if($('.inner .inner__text-logo').length) {
+	$('.inner-container').css("padding-top", "13.2rem")
+}

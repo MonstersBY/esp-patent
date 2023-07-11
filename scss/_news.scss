@@ -1,0 +1,30 @@
+.news {
+
+    .inner {
+        &__text {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        &__img {
+            width: 49.7rem;
+            height: 33.1rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .news {
+
+        .inner {
+            &__text {
+                font-size: 3.6rem;
+            }
+            &__img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
