@@ -1,0 +1,41 @@
+.about-company {
+    .top-title {
+        margin-bottom: 5.667rem;
+    }
+    &-center {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5.708rem;
+    }
+    &__img {
+        width: 60.6232rem;
+        height: 60.6259rem;
+    }
+    & .link-arrow {
+        position: absolute;
+        right: 0;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 15rem;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+    &__mainText {
+        font-family: 'Cochineal';
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 111%;
+        letter-spacing: 0.21rem;
+        width: 77.2rem;
+    }
+}

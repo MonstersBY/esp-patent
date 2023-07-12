@@ -1,0 +1,66 @@
+.activity {
+    .container > .top-title {
+        text-align: left;
+    }
+    .top-title {
+        margin-bottom: 7rem;
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10.6rem;
+    }
+    &-left {
+        flex: 1;
+
+        &__title {
+            font-family: 'Cochineal';
+            font-size: 3.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 111%;
+            letter-spacing: 0.21rem;
+            margin-bottom: 4rem;
+        }
+        &__list {
+            li {
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+                border-bottom: 1px solid #D9D9D9;
+                padding-left: 5.6rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    border: 1px solid #274497;
+                    border-radius: 50%;
+                    top: 0.5rem;
+                    left: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &-right {
+        width: 41.3rem;
+        padding-left: 4rem;
+        border-left: 1px solid #274497;
+        height: fit-content;
+        &__title {
+            font-family: 'Cochineal';
+            font-size: 3.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 111%;
+            letter-spacing: 0.21rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

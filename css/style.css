@@ -2413,6 +2413,27 @@ html.modal {
   top: 40%;
 }
 
+.our-team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.our-team .top-title {
+  margin-bottom: 6.8rem;
+}
+.our-team-left {
+  width: 40.7rem;
+}
+.our-team-left__text {
+  margin-bottom: 3.2rem;
+}
+.our-team-right {
+  width: 105.5rem;
+}
+
 @media (max-width: 48em) {
   .team-container {
     display: -webkit-box;
@@ -4297,6 +4318,185 @@ html.modal {
     margin: 0 auto;
   }
 }
+.about-company .top-title {
+  margin-bottom: 5.667rem;
+}
+.about-company-center {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5.708rem;
+}
+.about-company__img {
+  width: 60.6232rem;
+  height: 60.6259rem;
+}
+.about-company .link-arrow {
+  position: absolute;
+  right: 0;
+}
+.about-company-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-company__text {
+  width: 15rem;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.about-company__mainText {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  width: 77.2rem;
+}
+
+.activity .container > .top-title {
+  text-align: left;
+}
+.activity .top-title {
+  margin-bottom: 7rem;
+}
+.activity-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10.6rem;
+}
+.activity-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.activity-left__title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 4rem;
+}
+.activity-left__list li {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #D9D9D9;
+  padding-left: 5.6rem;
+  position: relative;
+}
+.activity-left__list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #274497;
+  border-radius: 50%;
+  top: 0.5rem;
+  left: 0;
+}
+.activity-left__list li:last-child {
+  margin-bottom: 0;
+}
+.activity-right {
+  width: 41.3rem;
+  padding-left: 4rem;
+  border-left: 1px solid #274497;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.activity-right__title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 2rem;
+}
+
+.our-projects .container > .top-title {
+  text-align: left;
+}
+.our-projects .top-title {
+  margin-bottom: 6.8rem;
+}
+.our-projects-item {
+  display: block;
+  border: 1px solid #D9D9D9;
+  padding: 4rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.our-projects-item:hover .our-projects-item__back {
+  opacity: 1;
+}
+.our-projects-item:hover .our-projects-item__text {
+  color: #FFFFFF;
+}
+.our-projects-item:hover .link-arrow {
+  color: #FFFFFF;
+}
+.our-projects-item:hover .link-arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.4rem;
+  height: 1.7rem;
+  background: url(../img/icon/arrow-right-white.svg) no-repeat;
+  top: 40%;
+  right: 0;
+}
+.our-projects-item__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.our-projects-item__text {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 4rem;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.our-projects-item .link-arrow {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.our-projects-item .link-arrow::after {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
 .swiper {
   overflow: hidden;
 }

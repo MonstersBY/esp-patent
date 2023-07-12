@@ -1,0 +1,66 @@
+.our-projects {
+    .container > .top-title {
+        text-align: left;
+    }
+    .top-title {
+        margin-bottom: 6.8rem;
+    }
+    &-item {
+        display: block;
+        border: 1px solid #D9D9D9;
+        padding: 4rem 3rem;
+        position: relative;
+        overflow: hidden;
+        
+
+
+        &:hover {
+            .our-projects-item__back {
+                opacity: 1;
+            }
+            .our-projects-item__text {
+                color: #FFFFFF;
+            }
+            .link-arrow {
+                color: #FFFFFF;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 3.4rem;
+                    height: 1.7rem;
+                    background: url(../img/icon/arrow-right-white.svg) no-repeat;
+                    top: 40%;
+                    right: 0; 
+                }
+            }
+        }
+        &__back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+        }
+        &__text {
+            font-family: 'Cochineal';
+            font-size: 3.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 111%;
+            letter-spacing: 0.21rem;
+            margin-bottom: 4rem;
+            transition: all 0.8s ease-in-out;
+        }
+        .link-arrow {
+            transition: all 0.8s ease-in-out;
+
+            &::after {
+                transition: all 0.8s ease-in-out;
+            }
+        }
+
+    }
+}

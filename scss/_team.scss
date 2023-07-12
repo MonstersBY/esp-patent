@@ -89,6 +89,25 @@
         }
     }
 }
+.our-team {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-title {
+        margin-bottom: 6.8rem;
+    }
+    &-left {
+        width: 40.7rem;
+
+        &__text {
+            margin-bottom: 3.2rem;
+        }
+    }
+    &-right {
+        width: 105.5rem;
+    }
+}
 
 @media (max-width: 48em) {
     .team {
