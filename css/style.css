@@ -4497,6 +4497,258 @@ html.modal {
   transition: all 0.8s ease-in-out;
 }
 
+.trademark-registration-header .top-title {
+  margin-bottom: 6.8rem;
+}
+.trademark-registration-header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 8rem;
+}
+.trademark-registration-header__top-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.trademark-registration-header__top-text {
+  color: #949494;
+  width: 49.7rem;
+}
+.trademark-registration-header__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21.2rem;
+}
+.trademark-registration-header__bottom .btn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.trademark-registration-header__bottom-text {
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding-left: 3rem;
+  border-left: 1px solid #0D0D0D;
+  width: 58.8rem;
+}
+.trademark-registration-anchor .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.trademark-registration-anchor__item {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 35.8rem;
+  height: 35.8rem;
+  border: 1px solid #C0C0C0;
+}
+.trademark-registration-anchor__item:hover .trademark-registration-anchor__item-back {
+  top: 0%;
+}
+.trademark-registration-anchor__item-back {
+  position: absolute;
+  width: 35.8rem;
+  height: 35.8rem;
+  top: -101%;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.trademark-registration-anchor__item-back img {
+  width: 100%;
+  height: 100%;
+}
+.trademark-registration-anchor__item-text {
+  text-align: center;
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+}
+.trademark-registration .container > .top-title {
+  text-align: left;
+}
+.trademark-registration .top-title {
+  margin-bottom: 6.8rem;
+}
+.trademark-registration-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+  margin-bottom: 10rem;
+}
+.trademark-registration__title {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  width: 49.7rem;
+}
+.trademark-registration__list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.trademark-registration__list-text {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.trademark-registration__list.drop {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: block;
+}
+.trademark-registration__list.drop .trademark-registration__item {
+  margin-left: 7.8rem;
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.trademark-registration__list.drop .trademark-registration__item:first-child {
+  margin-top: 2.2rem;
+}
+.trademark-registration__list.drop .trademark-registration__item.active .trademark-registration__item-head::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.trademark-registration__list.drop .trademark-registration__item.active .trademark-registration__item-bottom {
+  max-height: 30rem;
+}
+.trademark-registration__list.drop .trademark-registration__item-drop-number {
+  position: absolute;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  top: 2.2rem;
+  left: -7.8rem;
+}
+.trademark-registration__list.drop .trademark-registration__item-head {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2.2rem;
+}
+.trademark-registration__list.drop .trademark-registration__item-head::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.4rem;
+  height: 1.7rem;
+  background: url(../img/icon/arrow-right.svg) no-repeat;
+  top: 40%;
+  right: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.trademark-registration__list.drop .trademark-registration__item-bottom {
+  color: #949494;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.trademark-registration__list.drop .trademark-registration__item-bottom-text {
+  margin-bottom: 3.2rem;
+}
+.trademark-registration__list.drop .trademark-registration__item-bottom-link {
+  margin-bottom: 2.2rem;
+}
+.trademark-registration__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2.2rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid #C0C0C0;
+  width: 47.11%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 3.8rem;
+}
+.trademark-registration__item-text {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  width: 39.5rem;
+}
+.trademark-registration__item-number {
+  color: #274497;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.trademark-registration__item-img {
+  background: #FFF;
+  width: 21.9rem;
+  height: 21.9rem;
+}
+.trademark-registration__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
 .swiper {
   overflow: hidden;
 }

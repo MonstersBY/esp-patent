@@ -131,3 +131,24 @@ if($('.news').length) {
 		}
 	})
 }
+
+if($('.trademark-registration').length) {
+	$('.trademark-registration-container').each(function(x){
+		$(this).find('.trademark-registration__item-number').each(function(i){
+			i<9 ? $(this).html('/0'+(i+1)) : $(this).html('/'+(i+1))
+		})
+		$(this).find('.trademark-registration__item-drop-number').each(function(i){
+			i<9 ? $(this).html('0'+(i+1)) : $(this).html(i+1)
+		})
+	})
+}
+
+$('.trademark-registration__list.drop .trademark-registration__item').click(function() {
+	if (!event.target.classList.contains("link-arrow"))
+	$(this).toggleClass('active');
+});
+
+// $('.trademark-registration__list.drop .trademark-registration__item').on('click', function(evt) {
+// 	$(this).toggleClass('active');
+// });
+
