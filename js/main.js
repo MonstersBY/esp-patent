@@ -83,27 +83,27 @@ $('.modal-box .modal-box__btn').on('click', function(evt) {
 });
 
 
-// ymaps.ready(init);
-// function init(){
-// 	// Создание карты.
-// 	var map = new ymaps.Map("map", {
-// 		center: [55.759289, 37.556756],
-// 		zoom: 17,
-// 	},{
-// 		yandexMapDisablePoiInteractivity: true
-// 	});
+ymaps.ready(init);
+function init(){
+	// Создание карты.
+	var map = new ymaps.Map("map", {
+		center: [55.759289, 37.556756],
+		zoom: 17,
+	},{
+		yandexMapDisablePoiInteractivity: true
+	});
 
-// 	map.controls.remove('geolocationControl');
-// 	map.controls.remove('searchControl');
-// 	map.controls.remove('trafficControl');
-// 	map.controls.remove('typeSelector');
-// 	map.controls.remove('fullscreenControl');
-// 	map.controls.remove('zoomControl');
-// 	map.controls.remove('rulerControl');
-// 	map.controls.remove('scrollZoom');
-// 	map.controls.remove('drag');
-// 	map.behaviors.disable(['scrollZoom']);
-// }
+	map.controls.remove('geolocationControl');
+	map.controls.remove('searchControl');
+	map.controls.remove('trafficControl');
+	map.controls.remove('typeSelector');
+	map.controls.remove('fullscreenControl');
+	map.controls.remove('zoomControl');
+	map.controls.remove('rulerControl');
+	map.controls.remove('scrollZoom');
+	map.controls.remove('drag');
+	map.behaviors.disable(['scrollZoom']);
+}
 
 $('.services-container .services-right').each(function(x){
 	$(this).find('.services-item__number').each(function(x){

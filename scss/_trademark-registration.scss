@@ -55,7 +55,7 @@
 
             &:hover {
                 .trademark-registration-anchor__item-back {
-                    top: 0%;
+                    opacity: 1;
                 }
             }
 
@@ -63,7 +63,7 @@
                 position: absolute;
                 width: 35.8rem;
                 height: 35.8rem;
-                top: -101%;
+                opacity: 0;
                 transition: all 0.8s ease-in-out;
 
                 img {

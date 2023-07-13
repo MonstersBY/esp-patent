@@ -2354,7 +2354,7 @@ html.modal {
   bottom: 0;
 }
 .team-item__img:hover .team-item__contact {
-  top: 0rem;
+  opacity: 1;
 }
 .team-item__title {
   font-size: 3.5rem;
@@ -2389,7 +2389,8 @@ html.modal {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: -36rem;
+  top: 0;
+  opacity: 0;
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
 }
@@ -4795,13 +4796,13 @@ html.modal {
   border: 1px solid #C0C0C0;
 }
 .trademark-registration-anchor__item:hover .trademark-registration-anchor__item-back {
-  top: 0%;
+  opacity: 1;
 }
 .trademark-registration-anchor__item-back {
   position: absolute;
   width: 35.8rem;
   height: 35.8rem;
-  top: -101%;
+  opacity: 0;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
