@@ -260,10 +260,11 @@
             &-search {
                 margin: 0;
                 width: 60.5rem;
-                height: 8rem;
+                height: auto;
                 border: 1px solid #D9D9D9;
                 position: relative;
                 background: url(../img/icon/search.svg) no-repeat center right 3.6rem/3.6rem;
+                padding: 2rem 0;
             }
         }
         &__right {

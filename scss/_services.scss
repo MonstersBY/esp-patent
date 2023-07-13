@@ -117,7 +117,7 @@
             border: 1px solid #EFEFF2;
 
             .services-other-item__img {
-                top: 0;
+                opacity: 1;
             }
             .services-other-item__count, .services-other-item__title {
                 color: #FFF;
@@ -132,9 +132,10 @@
         &__img {
             position: absolute;
             z-index: -1;
-            top: -31rem;
+            top: 0;
+            opacity: 0;
             left: 0;
-            transition: all 0.5s ease-in-out;
+            transition: all 0.6s ease-in-out;
         }
         &__count {
             font-family: 'Cochineal';

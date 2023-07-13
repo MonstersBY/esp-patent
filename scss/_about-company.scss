@@ -39,3 +39,42 @@
         width: 77.2rem;
     }
 }
+
+@media (max-width: 48em) {
+    .about-company {
+        .top-title {
+            margin-bottom: 8;
+        }
+        &-center {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5.708rem;
+        }
+        &__img {
+            width: 71rem;
+            height: 71rem;
+        }
+        & .link-arrow {
+            position: relative;
+            right: 0;
+        }
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        &__text {
+            width: auto;
+            font-size: 3.6rem;
+            margin-bottom: 4.4rem;
+        }
+        &__mainText {
+            font-size: 7rem;
+            letter-spacing: 0.42rem;
+            width: auto;
+            margin-bottom: 8rem;
+        }
+    }
+}

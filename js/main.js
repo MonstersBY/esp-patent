@@ -113,6 +113,7 @@ $('.services-container .services-right').each(function(x){
 
 
 if($('.services-other .top-title span').length) {
+	console.log(123)
 	$('.services-other .top-title span').html(`${$('.services-other .services-other-item__count').length}`)
 	$('.services-other .services-other-item__count').each(function(x){
 		x<9 ? $(this).html('0'+(x+1)) : $(this).html(x+1)
