@@ -48,6 +48,48 @@
             letter-spacing: 0.12rem;
         }
     }
+
+    &.with-number {
+        .inner {
+            &__title span {
+                text-align: center;
+            }
+            &-right {
+                width: 83.6rem;
+                &__title {
+                    font-family: 'Cochineal';
+                    font-size: 3.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 111%;
+                    letter-spacing: 0.21rem;
+                    margin-bottom: 4rem;
+                }
+                &__form  {
+                    display: flex;
+                    gap: 1.2rem;
+                    margin-bottom: 4rem;
+
+                    input {
+                        width: 30rem;
+                        padding: 1.1rem 2rem 1.1rem 2rem;
+                        border: 1px solid #D9D9D9;
+                    }
+
+                    .btn {
+                        color: #274497;
+                        border: 1px solid #274497;
+                    }
+                }
+                ul {
+                    padding-left: 3rem;
+                    li {
+                        list-style: inherit;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 48em) {
@@ -102,6 +144,48 @@
                 font-size: 3.6rem;
                 line-height: 107%;
                 letter-spacing: 0.216rem;
+            }
+        }
+
+        &.with-number {
+            .inner {
+                &__title span {
+                    text-align: center;
+                }
+                &-right {
+                    width: auto;
+                    &__title {
+                        font-size: 3.6rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 107%;
+                        letter-spacing: 0.216rem;
+                        margin-bottom: 4.4rem;
+                    }
+                    &__form  {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4.4rem;
+                        margin-bottom: 8rem;
+    
+                        input {
+                            width: 100%;
+                            padding: 3rem 4rem 3rem 4rem;
+                            border: 1px solid #D9D9D9;
+                        }
+    
+                        .btn {
+                            color: #274497;
+                            border: 1px solid #274497;
+                        }
+                    }
+                    ul {
+                        padding-left: 3rem;
+                        li {
+                            list-style: inherit;
+                        }
+                    }
+                }
             }
         }
     }

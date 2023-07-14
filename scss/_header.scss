@@ -76,7 +76,8 @@
 
         &-container {
             position: absolute;
-            width: 75rem;
+            width: 90rem;
+            max-width: 90rem;
             height: 14rem;
             bottom: -14rem;
             left: -3.2rem;
@@ -92,6 +93,7 @@
             flex-direction: column;
             position: relative;
             gap: 2rem;
+            column-gap: 6rem;
             flex-wrap: wrap;
             line-height: 150%;
             font-size: 1.8rem;
@@ -230,7 +232,8 @@
             &-container {
                 position: absolute;
                 width: 75rem;
-                height: 80rem;
+                height: auto;
+                max-width: unset;
                 bottom: unset;
                 top: 5rem;
                 left: -2.2rem;
@@ -239,6 +242,7 @@
                 background-color: #EFEFF2;
                 transition: 0.5s opacity;
                 display: none;
+                max-height: 150rem;
             }
     
             &-list {

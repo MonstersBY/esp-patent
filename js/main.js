@@ -149,7 +149,9 @@ $('.trademark-registration__list.drop .trademark-registration__item').click(func
 	$(this).toggleClass('active');
 });
 
-// $('.trademark-registration__list.drop .trademark-registration__item').on('click', function(evt) {
-// 	$(this).toggleClass('active');
-// });
+if($('.rf').length) {
+	$('.rf-item__left-number').each(function(x){
+		x<9 ? $(this).html('0'+(x+1)) : $(this).html(x+1)
+	})
+}
 
