@@ -208,6 +208,9 @@ section {
   line-height: normal;
   position: relative;
 }
+.header__menu-btn {
+  padding: 1rem 0;
+}
 .header__menu-btn p {
   position: relative;
   padding-right: 1.8rem;
@@ -5463,6 +5466,10 @@ section {
 
 .container > .top-title {
   text-align: center;
+}
+
+.top-title {
+  display: block;
 }
 
 .btn {
