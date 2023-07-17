@@ -67,6 +67,7 @@
     .baner-swiper-next, .baner-swiper-prev {
         top: 10.5%;
         width: 5rem;
+        z-index: -1;
         &::after {
             content: unset;
         }

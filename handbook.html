@@ -48,9 +48,9 @@
         </div>
         <div class="header__right desktop">
             <div class="header__menu-mobile">+ 7 495 225 52 07</div>
-            <a href="" class="header__menu-social">
+            <div class="header__menu-social open-mail">
                 <img src="./img/icon/mail.svg" alt="">
-            </a>
+            </div>
             <a href="" class="header__menu-social">
                 <img src="./img/icon/telephone.svg" alt="">
             </a>
@@ -62,6 +62,43 @@
         </div>
     </div>
 </header>
+
+<div class="modal-box modal-box-sub-app">
+    <div class="modal-box__container filling">
+        <div class="modal-box__close"></div>
+        <div class="modal-box__title">Задайте вопрос</div>
+        <div class="modal-box__text">Наш специалист свяжется с Вами в течение 10 минут.</div>
+        <form class="form-inputs" action="">
+            <label class="form__item">
+                <div class="form__item-text">Ваше имя:</div>
+                <input type="text" class="input">
+                <span class="placeholder">ФИО</span>
+            </label>
+            <label class="form__item">
+                <div class="form__item-text">Ваш номер телефона:</div>
+                <input type="text" class="input">
+                <span class="placeholder">+7 (999) 999-99-99</span>
+            </label>
+            <label class="form__item">
+                <div class="form__item-text">Email:</div>
+                <input type="email" class="input">
+                <span class="placeholder">ВВЕДИТЕ ВАШ EMAIL</span>
+            </label>
+            <label class="form__item">
+                <div class="form__item-text">Ваш вопрос:</div>
+                <textarea class="textarea" name="text"></textarea>
+            </label>
+        </form>
+        <div class="modal-box__btn btn">Отправить</div>
+    </div>
+    <div class="modal-box__container success">
+        <div class="modal-box__close"></div>
+        <div class="modal-box__img">
+            <img src="./img/icon/tick-circle.svg" alt="">
+        </div>
+        <div class="modal-box__text">Запрос отправлен!</div>
+    </div>
+</div>
 
 <main>
 
@@ -194,9 +231,9 @@
                 <a href="" class="footer-center__item">Адресс: <br>г. Москва, Шмитовский проезд, д. 2, стр. 2а</a>
                 <a href="" class="footer-center__item">Телефоны: (495) 225-5207, (495) 796-6391</a>
                 <div class="footer-center__item footer-center__item-socials">
-                    <a href="" class="footer-center__item-social">
+                    <div class="footer-center__item-social open-mail">
                         <img src="./img/icon/mail.svg" alt="">
-                    </a>
+                    </div>
                     <a href="" class="footer-center__item-social">
                         <img src="./img/icon/telephone.svg" alt="">
                     </a>

@@ -1091,6 +1091,7 @@ html.modal {
 .baner .baner-swiper-next, .baner .baner-swiper-prev {
   top: 10.5%;
   width: 5rem;
+  z-index: -1;
 }
 .baner .baner-swiper-next::after, .baner .baner-swiper-prev::after {
   content: unset;
@@ -5622,6 +5623,10 @@ section {
 
 .blue-text {
   color: #274497;
+}
+
+.open-mail {
+  cursor: pointer;
 }
 
 .arrow {

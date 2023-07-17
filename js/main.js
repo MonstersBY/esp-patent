@@ -52,6 +52,15 @@ $('.btn-sub-app').on('click', function(evt) {
 	$modal_box.toggleClass('active');
 	$container.slideToggle();
 });
+$('.open-mail').on('click', function(evt) {
+	evt.preventDefault();
+	$('html').toggleClass('modal');
+  
+	const $modal_box = $('.modal-box')
+	const $container = $modal_box.children('.filling')
+	$modal_box.toggleClass('active');
+	$container.slideToggle();
+});
 
 $('.team-item__link, .team-item__img').on('click', function(evt) {
 	evt.preventDefault();
