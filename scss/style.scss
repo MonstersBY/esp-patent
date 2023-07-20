@@ -100,10 +100,11 @@ section {
       position: absolute;
       display: block;
       width: 3.4rem;
-      height: 1.7rem;
+      height: 1.2rem;
       background: url(../img/icon/arrow-right.svg) no-repeat;
-      top: 40%;
+      top: 50%;
       right: 0;
+      transform: translate(0, -50%);
   }
 }
 .top-back {
