@@ -1013,9 +1013,29 @@ html.modal {
   }
 }
 .baner {
-  margin-top: 2.6rem !important;
   margin-bottom: 24rem;
   position: relative;
+}
+.baner__video {
+  position: absolute;
+  width: 100%;
+  height: 127%;
+  z-index: 100;
+  opacity: 1;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  top: -4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.baner__video video {
+  width: 125%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: -24rem;
+  top: -6rem;
 }
 .baner .container {
   width: 100%;
@@ -1091,7 +1111,7 @@ html.modal {
 .baner .baner-swiper-next, .baner .baner-swiper-prev {
   top: 10.5%;
   width: 5rem;
-  z-index: -1;
+  z-index: 0;
 }
 .baner .baner-swiper-next::after, .baner .baner-swiper-prev::after {
   content: unset;
@@ -1174,6 +1194,27 @@ html.modal {
     margin-top: 5rem;
     margin-bottom: 24rem;
     position: relative;
+  }
+  .baner__video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    top: -4rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    margin: 0 -2rem;
+  }
+  .baner__video video {
+    width: 125%;
+    height: 73%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    left: -9rem;
+    top: -5rem;
   }
   .baner .container {
     width: 100%;

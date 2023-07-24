@@ -5,6 +5,12 @@ $('.header__burger').on('click', function(evt) {
 	$('.header__menu-container').slideToggle();
 });
 
+document.querySelector('.video-main').addEventListener('ended',myHandler,false);
+function myHandler(e) {
+	$('.baner__video').css('opacity',0)
+	$('.baner__video').css('z-index',-1)
+}
+
 $(".areas-right__item").mouseover(function(){
     const $this = $(this)
     let animeId
