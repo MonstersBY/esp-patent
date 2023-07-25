@@ -102,6 +102,7 @@ section {
       width: 3.4rem;
       height: 1.2rem;
       background: url(../img/icon/arrow-right.svg) no-repeat;
+      background-size: contain;
       top: 50%;
       right: 0;
       transform: translate(0, -50%);
@@ -126,7 +127,9 @@ section {
     width: 3.4rem;
     height: 1.7rem;
     background: url(../img/icon/arrow-left.svg) no-repeat;
-    top: 35%;
+    background-size: contain;
+    top: 50%;
+    transform: translate(0, -50%);
     left: 0;
   }
 }
@@ -230,7 +233,6 @@ section {
         width: 6.4rem;
         height: 2.7rem;
         background: url(../img/icon/arrow-right.svg) no-repeat;
-        top: 20%;
         right: 0;
         background-size: contain;
     }
@@ -254,7 +256,6 @@ section {
       width: 6.4rem;
       height: 2.7rem;
       background: url(../img/icon/arrow-left.svg) no-repeat;
-      top: 35%;
       left: 0;
     }
   }

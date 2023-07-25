@@ -5094,7 +5094,10 @@ html.modal {
   width: 3.4rem;
   height: 1.7rem;
   background: url(../img/icon/arrow-right.svg) no-repeat;
-  top: 40%;
+  background-size: contain;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   right: 0;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
@@ -5329,7 +5332,10 @@ html.modal {
     width: 6.4rem;
     height: 2.7rem;
     background: url(../img/icon/arrow-right.svg) no-repeat;
-    top: 20%;
+    background-size: contain;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     right: 0;
     background-size: contain;
     -webkit-transition: all 0.8s ease-in-out;
@@ -5600,6 +5606,7 @@ section {
   width: 3.4rem;
   height: 1.2rem;
   background: url(../img/icon/arrow-right.svg) no-repeat;
+  background-size: contain;
   top: 50%;
   right: 0;
   -webkit-transform: translate(0, -50%);
@@ -5627,7 +5634,10 @@ section {
   width: 3.4rem;
   height: 1.7rem;
   background: url(../img/icon/arrow-left.svg) no-repeat;
-  top: 35%;
+  background-size: contain;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   left: 0;
 }
 
@@ -5742,7 +5752,6 @@ section {
     width: 6.4rem;
     height: 2.7rem;
     background: url(../img/icon/arrow-right.svg) no-repeat;
-    top: 20%;
     right: 0;
     background-size: contain;
   }
@@ -5767,7 +5776,6 @@ section {
     width: 6.4rem;
     height: 2.7rem;
     background: url(../img/icon/arrow-left.svg) no-repeat;
-    top: 35%;
     left: 0;
   }
   .text-normal {

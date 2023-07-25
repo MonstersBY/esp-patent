@@ -172,7 +172,9 @@
                             width: 3.4rem;
                             height: 1.7rem;
                             background: url(../img/icon/arrow-right.svg) no-repeat;
-                            top: 40%;
+                            background-size: contain;
+                            top: 50%;
+                            transform: translate(0, -50%);
                             right: 0;
                             transition: all 0.8s ease-in-out;
                         }
@@ -384,7 +386,9 @@
                                 width: 6.4rem;
                                 height: 2.7rem;
                                 background: url(../img/icon/arrow-right.svg) no-repeat;
-                                top: 20%;
+                                background-size: contain;
+                                top: 50%;
+                                transform: translate(0, -50%);
                                 right: 0;
                                 background-size: contain;
                                 transition: all 0.8s ease-in-out;
