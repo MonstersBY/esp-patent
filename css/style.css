@@ -1019,7 +1019,7 @@ html.modal {
 .baner__video {
   position: absolute;
   width: 100%;
-  height: 150%;
+  height: 127%;
   z-index: 100;
   opacity: 1;
   overflow: hidden;
@@ -1029,13 +1029,13 @@ html.modal {
   transition: all 0.5s ease-in-out;
 }
 .baner__video video {
-  width: 148%;
+  width: 125%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  left: -46rem;
-  top: -14rem;
+  left: -24rem;
+  top: -5rem;
 }
 .baner .container {
   width: 100%;
@@ -1198,7 +1198,7 @@ html.modal {
   .baner__video {
     position: absolute;
     width: 100%;
-    height: 120%;
+    height: 100%;
     z-index: 100;
     overflow: hidden;
     margin-bottom: 1rem;
@@ -1208,13 +1208,13 @@ html.modal {
     margin: 0 -2rem;
   }
   .baner__video video {
-    width: 145%;
-    height: 100%;
+    width: 125%;
+    height: 73%;
     -o-object-fit: cover;
        object-fit: cover;
     position: absolute;
-    left: -17rem;
-    top: -33rem;
+    left: -9rem;
+    top: -5rem;
   }
   .baner .container {
     width: 100%;
