@@ -5,11 +5,16 @@ $('.header__burger').on('click', function(evt) {
 	$('.header__menu-container').slideToggle();
 });
 
-if (document.querySelector('.video-main')) 
+if (document.querySelector('.video-main')) {
 	document.querySelector('.video-main').addEventListener('ended',myHandler,false);
+	$('.header').css('opacity',0)
+}
+	
 function myHandler(e) {
 	$('.baner__video').css('opacity',0)
 	$('.baner__video').css('z-index',-1)
+	$('.baner-container').css('opacity',1)
+	$('.header').css('opacity',1)
 }
 
 $(".areas-right__item").mouseover(function(){
