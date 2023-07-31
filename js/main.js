@@ -7,11 +7,6 @@ $('.header__burger').on('click', function(evt) {
 
 if (document.querySelector('.video-main')) {
 	document.querySelector('.video-main').addEventListener('ended',myHandler,false);
-	$('.header').css('opacity',0)
-	$('.header').css('overflow','hidden')
-	// $('.header').css('margin-top',0)
-	// $('.header').css('max-height',0)
-	
 }
 	
 function myHandler(e) {

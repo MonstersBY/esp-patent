@@ -159,6 +159,14 @@ section {
 .header {
   margin-top: 2.5rem;
   text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.header.hidden {
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  max-height: 0;
 }
 .header .container {
   display: -webkit-box;
@@ -1028,6 +1036,16 @@ html.modal {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #EFEFF2;
+}
+.baner__video.baner__video-two {
+  height: 150%;
+  top: -5rem;
+}
+.baner__video.baner__video-two video {
+  width: 148%;
+  height: 100%;
+  left: -46rem;
+  top: -14rem;
 }
 .baner__video video {
   width: 125%;
