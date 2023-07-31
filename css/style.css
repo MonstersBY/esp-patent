@@ -1119,6 +1119,11 @@ html.modal {
   overflow: hidden;
   position: relative;
 }
+.baner .swiper-slide.swiper-slide-active .baner-circle.gif-ball video {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+}
 .baner .swiper-slide.swiper-slide-active .baner-circle.gif-ball img {
   position: absolute;
   width: 266rem;
@@ -1147,6 +1152,11 @@ html.modal {
 .baner .swiper-slide .baner-circle.gif-ball {
   overflow: hidden;
   position: relative;
+}
+.baner .swiper-slide .baner-circle.gif-ball video {
+  border-radius: 50%;
+  position: absolute;
+  width: 82%;
 }
 .baner .swiper-slide .baner-circle.gif-ball img {
   position: absolute;
