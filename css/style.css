@@ -1024,6 +1024,9 @@ html.modal {
   margin-bottom: 24rem;
   position: relative;
 }
+.baner .not-show {
+  opacity: 0;
+}
 .baner__video {
   position: absolute;
   width: 100%;
@@ -1036,6 +1039,15 @@ html.modal {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #EFEFF2;
+}
+.baner__video.vid-gif {
+  background: inherit;
+}
+.baner__video.vid-gif img {
+  position: absolute;
+  width: 138%;
+  left: -36.5rem;
+  top: -19rem;
 }
 .baner__video.baner__video-two {
   height: 150%;

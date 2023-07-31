@@ -5,6 +5,9 @@
     &-container {
         // opacity: 0;
     }
+    .not-show {
+        opacity: 0;
+    }
     &__video {
         position: absolute;
         width: 100%;
@@ -19,6 +22,17 @@
         top: -17rem;
         transition: all 0.5s ease-in-out;
         background: #EFEFF2;
+
+        &.vid-gif {
+            background: inherit;
+
+            img {
+                position: absolute;
+                width: 138%;
+                left: -36.5rem;
+                top: -19rem;
+            }
+        }
 
         &.baner__video-two {
             height: 150%;

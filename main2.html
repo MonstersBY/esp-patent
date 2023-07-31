@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <title>ESP главная</title>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header hidden" id="header">
+    <div class="container">
+        <div class="header__burger">
+            <div class="header__burger-icon"></div>
+        </div>
+        <div class="header__logo">
+            <a href="#">
+                <img src="img/Logo-ESP.svg" alt="">
+                <p>Патентное агентство<br>«ермакова, столярова и партнеры»</p>
+            </a>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu-btn">
+                <p>меню</p>
+                <div class="header__menu-container">
+                    <div class="header__menu-list">
+                        <input class="header__menu-search mobile" type="text">
+                        <a href="">О компании</a>
+                        <a href="">команда</a>
+                        <a href="">Истории из жизни</a>
+                        <a href="">Мы в эфире</a>
+                        <a href="">Партнеры</a>
+                        <a href="">контакты</a>
+                        <a href="">новости</a>
+                        <a href="">справочник</a>
+                        <a href="">именем рф</a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="header__menu-link">направления работы</a>
+            <input class="header__menu-search desktop" type="text">
+        </div>
+        <div class="header__right desktop">
+            <div class="header__menu-mobile">+ 7 495 225 52 07</div>
+            <div class="header__menu-social open-mail">
+                <img src="./img/icon/mail.svg" alt="">
+            </div>
+            <a href="" class="header__menu-social">
+                <img src="./img/icon/telephone.svg" alt="">
+            </a>
+        </div>
+        <div class="header__right mobile">
+            <a href="" class="header__menu-social">
+                <img src="./img/icon/call.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="modal-box modal-box-sub-app">
+    <div class="modal-box__container filling">
+        <div class="modal-box__close"></div>
+        <div class="modal-box__title">Задайте вопрос</div>
+        <div class="modal-box__text">Наш специалист свяжется с Вами в течение 10 минут.</div>
+        <form class="form-inputs" action="">
+            <label class="form__item">
+                <div class="form__item-text">Ваше имя:</div>
+                <input type="text" class="input">
+                <span class="placeholder">ФИО</span>
+            </label>
+            <label class="form__item">
+                <div class="form__item-text">Ваш номер телефона:</div>
+                <input type="text" class="input">
+                <span class="placeholder">+7 (999) 999-99-99</span>
+            </label>
+            <label class="form__item">
+                <div class="form__item-text">Email:</div>
+                <input type="email" class="input">
+                <span class="placeholder">ВВЕДИТЕ ВАШ EMAIL</span>
+            </label>
+            <label class="form__item">
+                <div class="form__item-text">Ваш вопрос:</div>
+                <textarea class="textarea" name="text"></textarea>
+            </label>
+        </form>
+        <div class="modal-box__btn btn">Отправить</div>
+    </div>
+    <div class="modal-box__container success">
+        <div class="modal-box__close"></div>
+        <div class="modal-box__img">
+            <img src="./img/icon/tick-circle.svg" alt="">
+        </div>
+        <div class="modal-box__text">Запрос отправлен!</div>
+    </div>
+</div>
+
+<main>
+    <section class="baner">
+        <div class="container">
+            <div class="baner__video vid-gif">
+                <img src="./video/вращение1_2.gif" alt="">
+                <!-- <video class="video-main" autoplay muted>
+                    <source src="./video/sphere.mp4" type="video/mp4">
+                    <source src="./video/sphere.mp4" type="video/mp4">
+                    <source src="./video/сфера2.mp4" type="video/mp4">
+                </video> -->
+            </div>
+            <div class="baner-swiper-text">
+                <img src="./img/ESP-text.svg" alt="">
+                <img src="./img/ESP-text.svg" alt="">
+            </div>
+            <div class="baner-container not-show">
+                <div class="swiper baner-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="baner-circle">
+                                <img src="./img/baner-img/ball1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="baner-circle">
+                                <img src="./img/baner-img/ball1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="baner-circle">
+                                <img src="./img/baner-img/ball1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="baner-circle">
+                                <img src="./img/baner-img/ball1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="baner-circle">
+                                <img src="./img/baner-img/ball1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next baner-swiper-next">
+                    <div class="arrow"></div>
+                </div>
+                <div class="swiper-button-prev baner-swiper-prev">
+                    <div class="arrow left"></div>
+                </div>
+                <div class="swiper-pagination baner-pagination"></div>
+                <div class="baner__text">
+                    <div class="baner__title">Решение <span class="blue-text">сложных</span> проблем</div>
+                    <div class="baner__subtitle">Наше патентное агентство оказывает услуги в области защиты прав на объекты интеллектуальной собственности в России и за рубежом</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="areas">
+        <div class="container">
+            <div class="areas-left">
+                <a href="" class="top-title">Сферы <br><span class="blue-text">деятельности</span></a>
+                <div class="btn btn-sub-app">ОСТАВИТЬ ЗАЯВКУ</div>
+                <div class="areas-left__animation">
+                    <div class="areas-left__animation-first">
+                        <div class="animation-div-one">
+                        </div>
+                        <div class="animation-div-two">
+                        </div>
+                        <div class="animation-div-three fill">
+                        </div>
+                    </div>
+                    <div class="areas-left__animation-second">
+                        <div class="animation-div-one">
+                        </div>
+                        <div class="animation-div-two">
+                        </div>
+                        <div class="animation-div-three fill">
+                        </div>
+                    </div>
+                    <div class="areas-left__animation-third">
+                        <div class="animation-div-one">
+                        </div>
+                        <div class="animation-div-two">
+                        </div>
+                        <div class="animation-div-three fill">
+                        </div>
+                    </div>
+                    <div class="areas-left__animation-fourth">
+                        <div class="animation-div-one">
+                        </div>
+                        <div class="animation-div-two">
+                        </div>
+                        <div class="animation-div-three fill">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="areas-right">
+                <a href="" class="areas-right__item anim-one">
+                    <div class="areas-right__item-text">Правовая охрана</div>
+                    <div class="areas-right__item-services"><i>20</i> услуг</div>
+                    <div class="areas-right__item-img">
+                        <svg width="115" height="70" viewBox="0 0 115 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 33716">
+                            <circle id="Ellipse 60" cx="35.5977" cy="35" r="34.5" stroke="#C0C0C0"/>
+                            <path id="Ellipse 61" d="M96.794 34.9986C96.794 46.6303 87.3647 56.0597 75.733 56.0597C64.1012 56.0597 54.6719 46.6303 54.6719 34.9986C54.6719 23.3669 64.1012 13.9375 75.733 13.9375C87.3647 13.9375 96.794 23.3669 96.794 34.9986Z" stroke="#C0C0C0"/>
+                            <circle class="areas-transform-color" id="Ellipse 62" cx="100.563" cy="35.0009" r="14.3212" fill="#274497"/>
+                            </g>
+                        </svg>  
+                    </div>
+                </a>
+                <a href="" class="areas-right__item anim-two">
+                    <div class="areas-right__item-text">Защита прав</div>
+                    <div class="areas-right__item-services"><i>20</i> услуг</div>
+                    <div class="areas-right__item-img">
+                        <svg width="114" height="71" viewBox="0 0 114 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 33717">
+                            <circle id="Ellipse 60" cx="78.0547" cy="35.6486" r="34.5" stroke="#C0C0C0"/>
+                            <path id="Ellipse 61" d="M42.9425 35.6471C42.9425 47.2789 33.5131 56.7082 21.8814 56.7082C10.2497 56.7082 0.820312 47.2789 0.820312 35.6471C0.820312 24.0154 10.2497 14.5861 21.8814 14.5861C33.5131 14.5861 42.9425 24.0154 42.9425 35.6471Z" stroke="#C0C0C0"/>
+                            <circle class="areas-transform-color" id="Ellipse 62" cx="47.4228" cy="35.6495" r="14.3212" fill="#274497"/>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a href="" class="areas-right__item anim-three">
+                    <div class="areas-right__item-text">Передача прав</div>
+                    <div class="areas-right__item-services"><i>20</i> услуг</div>
+                    <div class="areas-right__item-img">
+                        <svg width="113" height="45" viewBox="0 0 113 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 33719">
+                            <circle id="Ellipse 60" cx="17.6014" cy="22.3048" r="16.7264" stroke="#C0C0C0"/>
+                            <circle id="Ellipse 61" cx="51.8677" cy="22.3055" r="20.6294" stroke="#C0C0C0"/>
+                            <circle class="areas-transform-color" id="Ellipse 62" cx="90.0697" cy="22.3043" r="22.304" fill="#274497"/>
+                            </g>
+                        </svg> 
+                    </div>
+                </a>
+                <a href="" class="areas-right__item anim-four">
+                    <div class="areas-right__item-text">Перевод документации</div>
+                    <div class="areas-right__item-services"><i>20</i> услуг</div>
+                    <div class="areas-right__item-img">
+                        <svg width="101" height="82" viewBox="0 0 101 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 33718">
+                            <circle class="areas-transform-color" id="Ellipse 60" cx="49.7534" cy="41.7537" r="21.7066" fill="#274497"/>
+                            <circle id="Ellipse 62" cx="78.548" cy="22.017" r="21.3292" stroke="#C0C0C0"/>
+                            <circle id="Ellipse 63" cx="22.2042" cy="59.3021" r="21.3292" stroke="#C0C0C0"/>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-numbers">
+        <div class="container">
+            <div class="top-title">Мы в <span class="blue-text">цифрах</span></div>
+            <div class="our-numbers__container">
+                <div class="our-numbers__item">
+                    <div class="our-numbers__item-text">
+                        <img src="./img/main/circle-one.svg" alt="">
+                    </div>
+                    <div class="our-numbers__item-circle"></div>
+                    <div class="our-numbers__item-number">20К+<br><span>2000</span></div>
+                </div>
+                <div class="our-numbers__item">
+                    <div class="our-numbers__item-text">
+                        <img src="./img/main/circle-two.svg" alt="">
+                    </div>
+                    <div class="our-numbers__item-circle"></div>
+                    <div class="our-numbers__item-number">8К+<br><span>8000</span></div>
+                </div>
+                <div class="our-numbers__item">
+                    <div class="our-numbers__item-text">
+                        <img src="./img/main/circle-three.svg" alt="">
+                    </div>
+                    <div class="our-numbers__item-circle"></div>
+                    <div class="our-numbers__item-number">900+<br><span>~1000</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <a href="" class="top-title">Немного <span class="blue-text">о нас</span></a>
+            <div class="about-us__container">
+                <div class="about-us__item">
+                    <div class="about-us__text">
+                        <div class="about-us__title">Елена Вайкуленова</div>
+                        <div class="about-us__subtitle">Генеральный директор. Российский патентный поверенный</div>
+                    </div>
+                    <div class="about-us__img">
+                        <img src="./img/portrait/portrait-1.png" alt="">
+                    </div>
+                </div>
+                <div class="about-us__item">
+                    <div class="about-us__text">
+                        <div class="about-us__title">Дмитрий Железняк</div>
+                        <div class="about-us__subtitle">Российский и Евразийский патентный поверенный</div>
+                    </div>
+                    <div class="about-us__img">
+                        <img src="./img/portrait/portrait-2.png" alt="">
+                    </div>
+                </div>
+                <div class="about-us__item">
+                    <div class="about-us__text">
+                        <div class="about-us__title">Ксения Черенкова</div>
+                        <div class="about-us__subtitle">Секретарь-референт</div>
+                    </div>
+                    <div class="about-us__img">
+                        <img src="./img/portrait/portrait-3.png" alt="">
+                    </div>
+                </div>
+                <div class="about-us__item">
+                    <div class="about-us__text">
+                        <div class="about-us__title">Валентин Марков</div>
+                        <div class="about-us__subtitle">Партнер. Российский патентный поверенный</div>
+                    </div>
+                    <div class="about-us__img">
+                        <img src="./img/portrait/portrait-4.png" alt="">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="our-ratings">
+        <div class="container">
+            <div class="our-ratings-left">
+                <div class="our-ratings-left__small">О нас</div>
+                <div class="top-title">Мы в <span class="blue-text">рейтингах</span></div>
+                <div class="our-ratings-left__text text-normal">Наши рейтинги являются свидетельством нашей надежности, превосходного клиентского сервиса и результативности. Благодаря многолетнему опыту и экспертизе наших специалистов, мы занимаем лидирующие позиции в отрасли.</div>
+                <a href="" class="btn">подробнее о нас</a>
+            </div>
+            <div class="our-ratings-right desktop">
+                <img src="./img/main/our-ratings-ball.svg" alt="">
+            </div>
+            <div class="our-ratings-right mobile">
+                <div class="swiper partners-main-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-4.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-swiper">
+                                <img src="./img/main/ratings-circles/ratings-5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-news">
+        <div class="container">
+            <div class="top-container">
+                <div class="top-title">Сводка <span class="blue-text">новостей</span></div>
+                <a href="" class="btn">смотреть все</a>
+            </div>
+            <div class="main-news__list">
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-1.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-2.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-3.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+                <div class="main-news__item">
+                    <div class="main-news__item-img">
+                        <img src="./img/main/news/news-4.jpg" alt="">
+                    </div>
+                    <div class="main-news__item-date">7 апреля 2023</div>
+                    <div class="main-news__item-title">Nextons подтвердила лидерство в 41 номинации</div>
+                    <a href="" class="main-news__item-link link-arrow">Читать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer" id="footer">
+    <img class="footer-backgroung" src="./img/footer.png" alt="">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-top__text">Оставить заявку на звонок</div>
+            <form class="form-inputs footer-top__inputs">
+                <label class="form__item">
+                    <input type="text" class="input">
+                    <span class="placeholder">Имя</span>
+                </label>
+                <label class="form__item">
+                    <input type="tel" class="input">
+                    <span class="placeholder">Номер телефона</span>
+                </label>
+            </form>
+            <a href="" class="footer-top__link link-arrow">отправить</a>
+        </div>
+        <div class="footer-center">
+            <div class="footer-center__items">
+                <a href="" class="footer-center__item">Услуги</a>
+                <a href="" class="footer-center__item">Правовая охрана</a>
+                <a href="" class="footer-center__item">Защита прав</a>
+                <a href="" class="footer-center__item">Передача прав</a>
+                <a href="" class="footer-center__item">Перевод документации</a>
+            </div>
+            <div class="footer-center__items">
+                <a href="" class="footer-center__item">О компании</a>
+                <a href="" class="footer-center__item">Команда</a>
+                <a href="" class="footer-center__item">Истории из жизни</a>
+                <a href="" class="footer-center__item">Мы в эфире</a>
+                <a href="" class="footer-center__item">Партнеры</a>
+            </div>
+            <div class="footer-center__items">
+                <a href="" class="footer-center__item">Контакты</a>
+                <a href="" class="footer-center__item">Адресс: <br>г. Москва, Шмитовский проезд, д. 2, стр. 2а</a>
+                <a href="" class="footer-center__item">Телефоны: (495) 225-5207, (495) 796-6391</a>
+                <div class="footer-center__item footer-center__item-socials">
+                    <div class="footer-center__item-social open-mail">
+                        <img src="./img/icon/mail.svg" alt="">
+                    </div>
+                    <a href="" class="footer-center__item-social">
+                        <img src="./img/icon/telephone.svg" alt="">
+                    </a>
+                    <a href="" class="footer-center__item-social">
+                        <img src="./img/icon/skype.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-center__up">
+                <a href="#header"><img src="./img/footer-up.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__logo">
+                <img src="./img/Logo-ESP-small.svg" alt="">
+            </div>
+            <div class="footer-bottom__text">Политика конфиденциальности</div>
+            <div class="footer-bottom__dev">
+                <img src="./img/Logo-dev.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="./js/jquery.maskedinput.js"></script>
+<script src="./js/jquery.nice-select.js"></script>
+<script src="./js/inputmask.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/noframework.waypoints.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
