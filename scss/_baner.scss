@@ -20,6 +20,18 @@
         transition: all 0.5s ease-in-out;
         background: #EFEFF2;
 
+        &.baner__video-two {
+            height: 150%;
+            top: -5rem;
+
+            video {
+                width: 148%;
+                height: 100%;
+                left: -46rem;
+                top: -14rem;
+            }
+        }
+
         video {
             // width: 148%;
             width: 125%;

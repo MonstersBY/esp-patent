@@ -8,6 +8,10 @@ $('.header__burger').on('click', function(evt) {
 if (document.querySelector('.video-main')) {
 	document.querySelector('.video-main').addEventListener('ended',myHandler,false);
 	$('.header').css('opacity',0)
+	$('.header').css('overflow','hidden')
+	// $('.header').css('margin-top',0)
+	// $('.header').css('max-height',0)
+	
 }
 	
 function myHandler(e) {
@@ -15,6 +19,8 @@ function myHandler(e) {
 	$('.baner__video').css('z-index',-1)
 	$('.baner-container').css('opacity',1)
 	$('.header').css('opacity',1)
+	$('.header').css('margin-top','2.5rem')
+	$('.header').css('max-height','10rem')
 }
 
 $(".areas-right__item").mouseover(function(){
