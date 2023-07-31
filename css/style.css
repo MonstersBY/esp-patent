@@ -1039,13 +1039,13 @@ html.modal {
 }
 .baner__video.baner__video-two {
   height: 150%;
-  top: -5rem;
+  top: -9rem;
 }
 .baner__video.baner__video-two video {
-  width: 148%;
+  width: 138%;
   height: 100%;
-  left: -46rem;
-  top: -14rem;
+  left: -37rem;
+  top: -10rem;
 }
 .baner__video video {
   width: 125%;
