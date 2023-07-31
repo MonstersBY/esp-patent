@@ -1115,6 +1115,15 @@ html.modal {
   border: none;
   width: 100%;
 }
+.baner .swiper-slide.swiper-slide-active .baner-circle.gif-ball {
+  overflow: hidden;
+  position: relative;
+}
+.baner .swiper-slide.swiper-slide-active .baner-circle.gif-ball img {
+  position: absolute;
+  width: 266rem;
+  height: 150rem;
+}
 .baner .swiper-slide.swiper-slide-active img {
   width: 100%;
   height: 100%;
@@ -1134,6 +1143,15 @@ html.modal {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+}
+.baner .swiper-slide .baner-circle.gif-ball {
+  overflow: hidden;
+  position: relative;
+}
+.baner .swiper-slide .baner-circle.gif-ball img {
+  position: absolute;
+  width: 168rem;
+  height: 97rem;
 }
 .baner .swiper-slide img {
   width: 48.9rem;
