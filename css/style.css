@@ -1476,24 +1476,24 @@ html.modal {
 .areas-left__animation-first .animation-div-one {
   width: 19.2935rem;
   height: 19.2935rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate first-animation-one;
-          animation: 3s linear 0.5s infinite alternate first-animation-one;
+  -webkit-animation: 2s linear 0.5s infinite alternate first-animation-one;
+          animation: 2s linear 0.5s infinite alternate first-animation-one;
 }
 .areas-left__animation-first .animation-div-two {
   width: 11.8854rem;
   height: 11.8854rem;
   top: 4rem;
   left: 13rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate first-animation-two;
-          animation: 3s linear 0.5s infinite alternate first-animation-two;
+  -webkit-animation: 2s linear 0.5s infinite alternate first-animation-two;
+          animation: 2s linear 0.5s infinite alternate first-animation-two;
 }
 .areas-left__animation-first .animation-div-three {
   width: 7.8945rem;
   height: 7.8945rem;
   top: 6rem;
   left: 22rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate first-animation-three;
-          animation: 3s linear 0.5s infinite alternate first-animation-three;
+  -webkit-animation: 2s linear 0.5s infinite alternate first-animation-three;
+          animation: 2s linear 0.5s infinite alternate first-animation-three;
 }
 .areas-left__animation-second {
   display: none;
@@ -1502,23 +1502,23 @@ html.modal {
   width: 19.2935rem;
   height: 19.2935rem;
   left: 10rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate second-animation-one;
-          animation: 3s linear 0.5s infinite alternate second-animation-one;
+  -webkit-animation: 2s linear 0.5s infinite alternate second-animation-one;
+          animation: 2s linear 0.5s infinite alternate second-animation-one;
 }
 .areas-left__animation-second .animation-div-two {
   width: 11.8854rem;
   height: 11.8854rem;
   top: 4rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate second-animation-two;
-          animation: 3s linear 0.5s infinite alternate second-animation-two;
+  -webkit-animation: 2s linear 0.5s infinite alternate second-animation-two;
+          animation: 2s linear 0.5s infinite alternate second-animation-two;
 }
 .areas-left__animation-second .animation-div-three {
   width: 7.8945rem;
   height: 7.8945rem;
   top: 6rem;
   left: 7rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate second-animation-three;
-          animation: 3s linear 0.5s infinite alternate second-animation-three;
+  -webkit-animation: 2s linear 0.5s infinite alternate second-animation-three;
+          animation: 2s linear 0.5s infinite alternate second-animation-three;
 }
 .areas-left__animation-third {
   display: none;
@@ -1528,8 +1528,8 @@ html.modal {
   height: 9.8854rem;
   left: 0;
   top: 1rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate third-animation-one;
-          animation: 3s linear 0.5s infinite alternate third-animation-one;
+  -webkit-animation: 2s linear 0.5s infinite alternate third-animation-one;
+          animation: 2s linear 0.5s infinite alternate third-animation-one;
 }
 .areas-left__animation-third .animation-div-two {
   width: 11.4854rem;
@@ -1541,8 +1541,8 @@ html.modal {
   width: 11.8854rem;
   height: 11.8854rem;
   left: 19rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate third-animation-three;
-          animation: 3s linear 0.5s infinite alternate third-animation-three;
+  -webkit-animation: 2s linear 0.5s infinite alternate third-animation-three;
+          animation: 2s linear 0.5s infinite alternate third-animation-three;
 }
 .areas-left__animation-fourth {
   display: none;
@@ -1552,16 +1552,16 @@ html.modal {
   height: 11.8854rem;
   left: 0;
   top: 3rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate fourth-animation-one;
-          animation: 3s linear 0.5s infinite alternate fourth-animation-one;
+  -webkit-animation: 2s linear 0.5s infinite alternate fourth-animation-one;
+          animation: 2s linear 0.5s infinite alternate fourth-animation-one;
 }
 .areas-left__animation-fourth .animation-div-two {
   width: 11.4854rem;
   height: 11.4854rem;
   left: 15.3rem;
   top: -6.8rem;
-  -webkit-animation: 3s linear 0.5s infinite alternate fourth-animation-two;
-          animation: 3s linear 0.5s infinite alternate fourth-animation-two;
+  -webkit-animation: 2s linear 0.5s infinite alternate fourth-animation-two;
+          animation: 2s linear 0.5s infinite alternate fourth-animation-two;
 }
 .areas-left__animation-fourth .animation-div-three {
   width: 11.8854rem;
@@ -1946,27 +1946,62 @@ html.modal {
   height: 53.7rem;
   position: relative;
 }
+.our-numbers__item:nth-child(1) img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.our-numbers__item:nth-child(1) svg {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.our-numbers__item:nth-child(2) img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.our-numbers__item:nth-child(3) img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.our-numbers__item:nth-child(3) svg {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .our-numbers__item-text {
-  width: 25.1652rem;
-  height: 25.4081rem;
+  width: 25.5rem;
+  height: 25.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 50%;
 }
-.our-numbers__item-circle {
+.our-numbers__item-text svg {
+  width: 100%;
+  height: 100%;
+}
+.our-numbers__item-text svg path {
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+}
+.our-numbers__item-text::after {
+  content: "";
+  display: block;
+  background: #274497;
+  position: absolute;
   width: 5.5rem;
   height: 5.5rem;
-  background: #274497;
-  border-radius: 50%;
-  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
-.our-numbers__item-circle::after {
+.our-numbers__item-text::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1977,6 +2012,17 @@ html.modal {
   width: 1.1rem;
   height: 1.1rem;
   background: #D9D9D9;
+}
+.our-numbers__item-text:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.our-numbers__item-text:hover svg {
+  width: 100%;
+  height: 100%;
+}
+.our-numbers__item-text:hover svg path {
+  fill: #D9D9D9;
 }
 .our-numbers__item-number {
   position: absolute;
@@ -2037,18 +2083,7 @@ html.modal {
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
   }
-  .our-numbers__item-circle {
-    width: 5.5rem;
-    height: 5.5rem;
-    background: #274497;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-  }
-  .our-numbers__item-circle::after {
+  .our-numbers__item-text::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -2094,6 +2129,9 @@ html.modal {
   display: flex;
   gap: 6rem;
 }
+.about-us__container:hover .about-us__item:nth-child(2n) {
+  bottom: -10rem;
+}
 .about-us__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2105,24 +2143,19 @@ html.modal {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: relative;
+  bottom: 0rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  gap: 3rem;
+  cursor: default;
 }
 .about-us__item:nth-child(2n) .about-us__img::after {
   background: #FFF;
 }
-.about-us__item:nth-child(2) img {
-  width: 35rem;
-  height: 59rem;
-  bottom: -14rem;
-}
-.about-us__item:nth-child(3) img {
-  width: 40rem;
-  height: 60rem;
-  bottom: -12rem;
-}
-.about-us__item:nth-child(4) img {
-  width: 40rem;
-  height: 70rem;
-  bottom: -23rem;
+.about-us__item:hover img {
+  -webkit-filter: none;
+          filter: none;
 }
 .about-us__text {
   display: -webkit-box;
@@ -2156,10 +2189,6 @@ html.modal {
   overflow: hidden;
   border-radius: 100rem;
 }
-.about-us__img:hover img {
-  -webkit-filter: none;
-          filter: none;
-}
 .about-us__img::after {
   content: "";
   display: block;
@@ -2179,6 +2208,8 @@ html.modal {
      object-fit: cover;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 48em) {
@@ -2192,6 +2223,9 @@ html.modal {
     gap: 6rem;
     overflow: auto;
     padding-bottom: 2rem;
+  }
+  .about-us__container:hover .about-us__item:nth-child(2n) {
+    bottom: 0;
   }
   .about-us__item {
     display: -webkit-box;
@@ -2208,21 +2242,6 @@ html.modal {
   }
   .about-us__item:nth-child(2n) .about-us__img::after {
     background: #FFF;
-  }
-  .about-us__item:nth-child(2) img {
-    width: 61rem;
-    height: 115rem;
-    bottom: -34rem;
-  }
-  .about-us__item:nth-child(3) img {
-    width: 67rem;
-    height: 105rem;
-    bottom: -22rem;
-  }
-  .about-us__item:nth-child(4) img {
-    width: 61rem;
-    height: 127rem;
-    bottom: -41rem;
   }
   .about-us__text {
     display: -webkit-box;
@@ -2305,6 +2324,200 @@ html.modal {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: relative;
+}
+.our-ratings-right.desktop {
+  height: 84rem;
+}
+.our-ratings-right > div {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.our-ratings-right > div path {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.our-ratings-right > div:hover {
+  border: 1px solid #274497;
+}
+.our-ratings-right > div:hover path {
+  fill: #274497;
+}
+.our-ratings-right .circle-top-left {
+  position: absolute;
+  width: 14.8rem;
+  height: 14.8rem;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  top: 0;
+  right: 69.7rem;
+}
+.our-ratings-right .circle-bottom-left {
+  position: absolute;
+  width: 18.4rem;
+  height: 18.4rem;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  top: 38rem;
+  right: 58rem;
+}
+.our-ratings-right .circle-magazine {
+  position: absolute;
+  width: 22.8rem;
+  height: 22.8rem;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 42.3rem;
+  right: 83rem;
+}
+.our-ratings-right .circle-magazine svg {
+  width: 4.2556rem;
+  height: 5.1334rem;
+}
+.our-ratings-right .circle-best-lawyers {
+  position: absolute;
+  width: 27.1rem;
+  height: 27.1rem;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 55.5rem;
+  right: 60.7rem;
+}
+.our-ratings-right .circle-best-lawyers svg {
+  width: 14.1rem;
+  height: 2.8rem;
+}
+.our-ratings-right .circle-chambers {
+  position: absolute;
+  width: 33.8rem;
+  height: 33.8rem;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 11.8rem;
+  right: 0;
+}
+.our-ratings-right .circle-chambers svg {
+  width: 11.2rem;
+  height: 3.3rem;
+}
+.our-ratings-right .circle-pravo {
+  position: absolute;
+  width: 45rem;
+  height: 45rem;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 39rem;
+  right: 16.5rem;
+}
+.our-ratings-right .circle-pravo svg {
+  width: 19.7328rem;
+  height: 5.8rem;
+}
+.our-ratings-right .circle-pravo::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background: #274497;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.our-ratings-right .circle-pravo__text {
+  width: 22.5rem;
+  position: absolute;
+  color: #FFFFFF;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
+  cursor: default;
+}
+.our-ratings-right .circle-pravo__text-top {
+  font-family: "Cochineal";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  letter-spacing: 0.21rem;
+  margin-bottom: 1rem;
+}
+.our-ratings-right .circle-pravo:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.our-ratings-right .circle-pravo:hover svg {
+  opacity: 0;
+}
+.our-ratings-right .circle-pravo:hover .circle-pravo__text {
+  opacity: 1;
+}
+.our-ratings-right__legal {
+  position: absolute;
+  width: 39.9rem;
+  height: 39.9rem;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 1.5rem;
+  right: 33.5rem;
+}
+.our-ratings-right__legal svg {
+  width: 8.455rem;
+  height: 8.7706rem;
+}
+.our-ratings-right__legal svg path {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 48em) {
@@ -5659,6 +5872,34 @@ section {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.btn::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: #274497;
+  border-radius: 6.9rem;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.btn:hover {
+  color: #FFFFFF;
+  border: 1px solid #274497;
+}
+.btn:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
 }
 
 .link-arrow {

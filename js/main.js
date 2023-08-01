@@ -18,15 +18,22 @@ function myHandler(e) {
 	$('.header').css('opacity',1)
 	$('.header').css('margin-top','2.5rem')
 	$('.header').css('max-height','10rem')
+	setTimeout(() =>{
+		if ($('.gif-ball video').length) {
+			$('.gif-ball div video').attr("autoplay",'')
+			$('.gif-ball div video').attr("loop",'')
+			$('.gif-ball div video').trigger('play')
+		}
+	}, 420);
+
 }
 
-if ($('.gif-ball video').length) {
-	$('.gif-ball video').each(function( ) {
-		console.log($(this));
-        $(this).attr("autoplay",'')
-        $(this).attr("loop",'')
-    });
-}
+// if ($('.gif-ball video').length) {
+// 	$('.gif-ball video').each(function( ) {
+//         $(this).attr("autoplay",'')
+//         $(this).attr("loop",'')
+//     });
+// }
 
 
 $(".areas-right__item").mouseover(function(){
