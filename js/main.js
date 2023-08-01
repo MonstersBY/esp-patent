@@ -23,10 +23,41 @@ function myHandler(e) {
 			$('.gif-ball div video').attr("autoplay",'')
 			$('.gif-ball div video').attr("loop",'')
 			$('.gif-ball div video').trigger('play')
+			$('.gif-ball div video').each(function (i) {
+				setInterval(() => {
+					if($(this).prop('currentTime') >= 3.52) {
+						$(this).prop('currentTime', 0.0)
+					}
+				}, 1)
+			})
+
+			// $('.gif-ball div video').bind( "timeupdate", function() {
+			// 	if(this.currentTime >= 3.34) {
+			// 		console.log(this);
+			// 		this.currentTime = 0.0;
+			// 	}
+			// 	reqId = requestAnimationFrame(function play() {
+			// 		console.log(Math.round(video.currentTime * 1000));
+			// 		reqId = requestAnimationFrame(play);
+			// 	});
+			// });
+			// $('.gif-ball div video').each(function (i) {
+			// 	.addEventListener("timeupdate", function () {
+			// 		if(this.currentTime >= 7.0) {
+			// 			console.log(this.currentTime);
+			// 			this.currentTime = 0.0;
+			// 		}
+			// 	});
+			// })
 		}
 	}, 420);
 
 }
+// var vid = document.querySelectorAll(".videtest");
+
+// console.log(vid[1]);
+// vid[1]
+
 
 // if ($('.gif-ball video').length) {
 // 	$('.gif-ball video').each(function( ) {
