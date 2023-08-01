@@ -154,13 +154,14 @@
                     height: 82%;
                     overflow: hidden;
                     position: relative;
+                    border-radius: 50%;
                 }
 
                 video {
                     border-radius: 50%;
                     position: absolute;
                     width: 100%;
-                    transform: scale(1.01);
+                    transform: scale(1.02);
                 }
                 
                 img {

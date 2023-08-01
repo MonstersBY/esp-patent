@@ -1164,13 +1164,14 @@ html.modal {
   height: 82%;
   overflow: hidden;
   position: relative;
+  border-radius: 50%;
 }
 .baner .swiper-slide .baner-circle.gif-ball video {
   border-radius: 50%;
   position: absolute;
   width: 100%;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 .baner .swiper-slide .baner-circle.gif-ball img {
   position: absolute;
