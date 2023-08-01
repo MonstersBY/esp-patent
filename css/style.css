@@ -1123,6 +1123,8 @@ html.modal {
   border-radius: 50%;
   position: absolute;
   width: 100%;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 .baner .swiper-slide.swiper-slide-active .baner-circle.gif-ball img {
   position: absolute;
