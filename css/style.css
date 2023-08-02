@@ -1444,6 +1444,16 @@ html.modal {
     line-height: 140%;
     width: 90%;
   }
+  .baner__video.baner__video-two {
+    height: 110%;
+    top: -20rem;
+  }
+  .baner__video.baner__video-two video {
+    width: 138%;
+    height: 100%;
+    left: -14rem;
+    top: -10rem;
+  }
 }
 .areas .container {
   display: -webkit-box;
