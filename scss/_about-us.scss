@@ -102,6 +102,10 @@
             flex-direction: column;
             flex: none;
             width: 61rem;
+
+            &.scroll-work:nth-child(2n) {
+                bottom: 0;
+            }
     
             &:nth-child(2n) .about-us__img::after {
                 background: #FFF;

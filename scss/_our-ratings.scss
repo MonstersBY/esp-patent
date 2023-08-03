@@ -192,6 +192,22 @@
     
         &-right {
             flex: 1;
+
+            & > div {
+            
+                transition: 0.5s ease-in-out;
+    
+                path {
+                    transition: 0.5s ease-in-out;
+                }
+                &:hover {
+                    border: 0 solid #274497;
+    
+                    path {
+                        fill: #274497;
+                    }
+                }
+            }
         }
     }
 }
