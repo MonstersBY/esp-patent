@@ -35,7 +35,7 @@
         }
 
         &.baner__video-two {
-            height: 150%;
+            height: 125%;
             top: -9rem;
 
             video {
@@ -44,10 +44,15 @@
                 // left: -46rem;
                 // top: -14rem;
 
-                width: 138%;
+                // width: 138%;
+                // height: 100%;
+                // left: -37rem;
+                // top: -10rem;
+
+                width: 130%;
                 height: 100%;
-                left: -37rem;
-                top: -10rem;
+                left: -29rem;
+                top: -1rem;
             }
         }
 
@@ -421,13 +426,21 @@
         }
     }
     .baner__video.baner__video-two {
-        height: 110%;
+        // height: 110%;
+        // top: -20rem;
+
+        height: 117%;
         top: -20rem;
     }
     .baner__video.baner__video-two video {
-        width: 138%;
-        height: 100%;
-        left: -14rem;
-        top: -10rem;
+        // width: 138%;
+        // height: 100%;
+        // left: -14rem;
+        // top: -10rem;
+
+        width: 100%;
+        height: 60%;
+        left: 0rem;
+        top: 13rem;
     }
 }
