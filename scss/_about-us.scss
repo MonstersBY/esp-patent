@@ -5,12 +5,6 @@
     &__container {
         display: flex;
         gap: 6rem;
-
-        &:hover {
-            .about-us__item:nth-child(2n) {
-                bottom: -10rem;
-            }
-        }
     }
     &__item {
         display: flex;
@@ -22,6 +16,9 @@
         gap: 3rem;
         cursor: default;
 
+        &.scroll-work:nth-child(2n) {
+            bottom: -10rem;
+        }
         &:nth-child(2n) .about-us__img::after {
             background: #FFF;
         }

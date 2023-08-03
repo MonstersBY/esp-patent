@@ -1194,10 +1194,10 @@ html.modal {
   width: 4rem;
 }
 .baner .baner-swiper-next {
-  right: 35.2rem;
+  right: 37.2rem;
 }
 .baner .baner-swiper-prev {
-  left: 35.2rem;
+  left: 37.2rem;
 }
 .baner .baner-swiper-prev .arrow::after {
   right: auto;
@@ -1486,24 +1486,24 @@ html.modal {
 .areas-left__animation-first .animation-div-one {
   width: 19.2935rem;
   height: 19.2935rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate first-animation-one;
-          animation: 2s linear 0.5s infinite alternate first-animation-one;
+  -webkit-animation: 1s linear 0.5s infinite alternate first-animation-one;
+          animation: 1s linear 0.5s infinite alternate first-animation-one;
 }
 .areas-left__animation-first .animation-div-two {
   width: 11.8854rem;
   height: 11.8854rem;
   top: 4rem;
   left: 13rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate first-animation-two;
-          animation: 2s linear 0.5s infinite alternate first-animation-two;
+  -webkit-animation: 1s linear 0.5s infinite alternate first-animation-two;
+          animation: 1s linear 0.5s infinite alternate first-animation-two;
 }
 .areas-left__animation-first .animation-div-three {
   width: 7.8945rem;
   height: 7.8945rem;
   top: 6rem;
   left: 22rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate first-animation-three;
-          animation: 2s linear 0.5s infinite alternate first-animation-three;
+  -webkit-animation: 1s linear 0.5s infinite alternate first-animation-three;
+          animation: 1s linear 0.5s infinite alternate first-animation-three;
 }
 .areas-left__animation-second {
   display: none;
@@ -1512,23 +1512,23 @@ html.modal {
   width: 19.2935rem;
   height: 19.2935rem;
   left: 10rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate second-animation-one;
-          animation: 2s linear 0.5s infinite alternate second-animation-one;
+  -webkit-animation: 1s linear 0.5s infinite alternate second-animation-one;
+          animation: 1s linear 0.5s infinite alternate second-animation-one;
 }
 .areas-left__animation-second .animation-div-two {
   width: 11.8854rem;
   height: 11.8854rem;
   top: 4rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate second-animation-two;
-          animation: 2s linear 0.5s infinite alternate second-animation-two;
+  -webkit-animation: 1s linear 0.5s infinite alternate second-animation-two;
+          animation: 1s linear 0.5s infinite alternate second-animation-two;
 }
 .areas-left__animation-second .animation-div-three {
   width: 7.8945rem;
   height: 7.8945rem;
   top: 6rem;
   left: 7rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate second-animation-three;
-          animation: 2s linear 0.5s infinite alternate second-animation-three;
+  -webkit-animation: 1s linear 0.5s infinite alternate second-animation-three;
+          animation: 1s linear 0.5s infinite alternate second-animation-three;
 }
 .areas-left__animation-third {
   display: none;
@@ -1538,8 +1538,8 @@ html.modal {
   height: 9.8854rem;
   left: 0;
   top: 1rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate third-animation-one;
-          animation: 2s linear 0.5s infinite alternate third-animation-one;
+  -webkit-animation: 1s linear 0.5s infinite alternate third-animation-one;
+          animation: 1s linear 0.5s infinite alternate third-animation-one;
 }
 .areas-left__animation-third .animation-div-two {
   width: 11.4854rem;
@@ -1551,8 +1551,8 @@ html.modal {
   width: 11.8854rem;
   height: 11.8854rem;
   left: 19rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate third-animation-three;
-          animation: 2s linear 0.5s infinite alternate third-animation-three;
+  -webkit-animation: 1s linear 0.5s infinite alternate third-animation-three;
+          animation: 1s linear 0.5s infinite alternate third-animation-three;
 }
 .areas-left__animation-fourth {
   display: none;
@@ -1562,16 +1562,16 @@ html.modal {
   height: 11.8854rem;
   left: 0;
   top: 3rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate fourth-animation-one;
-          animation: 2s linear 0.5s infinite alternate fourth-animation-one;
+  -webkit-animation: 1s linear 0.5s infinite alternate fourth-animation-one;
+          animation: 1s linear 0.5s infinite alternate fourth-animation-one;
 }
 .areas-left__animation-fourth .animation-div-two {
   width: 11.4854rem;
   height: 11.4854rem;
   left: 15.3rem;
   top: -6.8rem;
-  -webkit-animation: 2s linear 0.5s infinite alternate fourth-animation-two;
-          animation: 2s linear 0.5s infinite alternate fourth-animation-two;
+  -webkit-animation: 1s linear 0.5s infinite alternate fourth-animation-two;
+          animation: 1s linear 0.5s infinite alternate fourth-animation-two;
 }
 .areas-left__animation-fourth .animation-div-three {
   width: 11.8854rem;
@@ -1984,7 +1984,6 @@ html.modal {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  overflow: hidden;
   border-radius: 50%;
 }
 .our-numbers__item-text svg {
@@ -2004,8 +2003,8 @@ html.modal {
   height: 5.5rem;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   border-radius: 50%;
   z-index: -1;
   -webkit-transition: 0.4s ease-in-out;
@@ -2024,12 +2023,8 @@ html.modal {
   background: #D9D9D9;
 }
 .our-numbers__item-text:hover::after {
-  width: 100%;
-  height: 100%;
-}
-.our-numbers__item-text:hover svg {
-  width: 100%;
-  height: 100%;
+  -webkit-animation: bounce 500ms ease-in-out forwards;
+          animation: bounce 500ms ease-in-out forwards;
 }
 .our-numbers__item-text:hover svg path {
   fill: #D9D9D9;
@@ -2066,6 +2061,35 @@ html.modal {
   letter-spacing: initial;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(6);
+            transform: translate(-50%, -50%) scale(6);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(4.8);
+            transform: translate(-50%, -50%) scale(4.8);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(6);
+            transform: translate(-50%, -50%) scale(6);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(4.8);
+            transform: translate(-50%, -50%) scale(4.8);
+  }
+}
 @media (max-width: 48em) {
   .our-numbers__container {
     display: -webkit-box;
@@ -2139,9 +2163,6 @@ html.modal {
   display: flex;
   gap: 6rem;
 }
-.about-us__container:hover .about-us__item:nth-child(2n) {
-  bottom: -10rem;
-}
 .about-us__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2159,6 +2180,9 @@ html.modal {
   transition: 0.5s ease-in-out;
   gap: 3rem;
   cursor: default;
+}
+.about-us__item.scroll-work:nth-child(2n) {
+  bottom: -10rem;
 }
 .about-us__item:nth-child(2n) .about-us__img::after {
   background: #FFF;

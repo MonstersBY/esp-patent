@@ -12,7 +12,7 @@ const rem = function (rem) {
 var baner_swiper = new Swiper(".baner-swiper", {
     slidesPerView: "auto",
     centeredSlides: true,
-    spaceBetween: rem(28),
+    spaceBetween: rem(20),
     loop: true,
     pagination: {
         el: ".baner-pagination",

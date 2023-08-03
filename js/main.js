@@ -19,13 +19,26 @@ function myHandler(e) {
 	$('.header').css('margin-top','2.5rem')
 	$('.header').css('max-height','10rem')
 	setTimeout(() =>{
+		$('.header').css('overflow','unset')
 		if ($('.gif-ball video').length) {
+			// $('.swiper-slide-active').find('video').attr("autoplay",'')
+			// $('.swiper-slide-active').find('video').attr("loop",'')
+			// $('.swiper-slide-active').find('video').trigger('play')
+
+			// $('.swiper-slide-prev').find('video').attr("autoplay",'')
+			// $('.swiper-slide-prev').find('video').attr("loop",'')
+			// $('.swiper-slide-prev').find('video').trigger('play')
+
+			// $('.swiper-slide-next').find('video').attr("autoplay",'')
+			// $('.swiper-slide-next').find('video').attr("loop",'')
+			// $('.swiper-slide-next').find('video').trigger('play')
+
 			$('.gif-ball div video').attr("autoplay",'')
 			$('.gif-ball div video').attr("loop",'')
 			$('.gif-ball div video').trigger('play')
 			$('.gif-ball div video').each(function (i) {
 				setInterval(() => {
-					if($(this).prop('currentTime') >= 3.52) {
+					if($(this).prop('currentTime') >= 3.501) {
 						$(this).prop('currentTime', 0.0)
 					}
 				}, 1)
@@ -53,18 +66,14 @@ function myHandler(e) {
 	}, 420);
 
 }
-// var vid = document.querySelectorAll(".videtest");
-
-// console.log(vid[1]);
-// vid[1]
 
 
-// if ($('.gif-ball video').length) {
-// 	$('.gif-ball video').each(function( ) {
-//         $(this).attr("autoplay",'')
-//         $(this).attr("loop",'')
-//     });
-// }
+var waypoint_about_us = new Waypoint({
+	element: document.querySelector('.about-us'),
+	handler: function(direction) {
+	  $('.about-us').find('.about-us__item').addClass('scroll-work')
+	}
+})
 
 
 $(".areas-right__item").mouseover(function(){
