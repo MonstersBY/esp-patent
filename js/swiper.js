@@ -26,6 +26,22 @@ var baner_swiper = new Swiper(".baner-swiper", {
         prevEl: ".baner-swiper-prev",
     },
 });
+var baner_swiper1 = new Swiper(".baner-swiper1", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: rem(20),
+    pagination: {
+        el: ".baner-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">0' + (index + 1) + "</span>";
+        },
+    },
+    navigation: {
+        nextEl: ".baner-swiper-next",
+        prevEl: ".baner-swiper-prev",
+    },
+});
 
 var partners_main_swiper = new Swiper(".partners-main-swiper", {
     spaceBetween: rem(1),
