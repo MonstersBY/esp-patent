@@ -1282,6 +1282,31 @@ html.modal {
   opacity: 0;
 }
 
+.swiper-test {
+  position: absolute;
+  width: 100%;
+  height: 137%;
+  z-index: 100;
+  opacity: 1;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  top: -17rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #EFEFF2;
+  z-index: 0;
+}
+
+.swiper-test video {
+  width: 125%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  left: -24rem;
+  height: 90%;
+  top: 8rem;
+}
+
 @media (max-width: 48em) {
   .baner {
     margin-top: 5rem;
