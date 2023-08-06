@@ -91,10 +91,6 @@ baner_swiper.on('beforeSlideChangeStart', function () {
 });
 
 
-
-
-
-
 var baner_swiper1 = new Swiper(".baner-swiper1", {
     slidesPerView: "auto",
     centeredSlides: true,

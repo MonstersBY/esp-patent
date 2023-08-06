@@ -2,6 +2,12 @@ $(document).ready(function() {
 
 $('select').niceSelect();
 
+if ($('.test-mobile-video').length) {
+	$('.test-mobile-video .video-main').trigger('play')
+}
+
+
+
 $('.header__burger').on('click', function(evt) {
 	let $this = $(this);
 	$('.header__menu-container').slideToggle();
