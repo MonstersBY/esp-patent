@@ -1,6 +1,10 @@
 .baner {
     margin-bottom: 24rem;
     position: relative;
+
+    .swiper {
+        padding: 0 10rem;
+    }
     
     &-container {
         // opacity: 0;
@@ -185,7 +189,7 @@
     .baner-swiper-next, .baner-swiper-prev {
         top: 10.5%;
         width: 5rem;
-        z-index: 0;
+        z-index: 1;
         &::after {
             content: unset;
         }
@@ -260,6 +264,10 @@
         margin-top: 5rem;
         margin-bottom: 24rem;
         position: relative;
+
+        .swiper {
+            padding: 0;
+        }
 
         &__video {
             position: absolute;

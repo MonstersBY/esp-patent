@@ -211,6 +211,29 @@
 <script src="./js/noframework.waypoints.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
 </script>
+<script>
+ymaps.ready(init);
+function init(){
+	// Создание карты.
+	var map = new ymaps.Map("map", {
+		center: [55.759289, 37.556756],
+		zoom: 17,
+	},{
+		yandexMapDisablePoiInteractivity: true
+	});
+
+	map.controls.remove('geolocationControl');
+	map.controls.remove('searchControl');
+	map.controls.remove('trafficControl');
+	map.controls.remove('typeSelector');
+	map.controls.remove('fullscreenControl');
+	map.controls.remove('zoomControl');
+	map.controls.remove('rulerControl');
+	map.controls.remove('scrollZoom');
+	map.controls.remove('drag');
+	map.behaviors.disable(['scrollZoom']);
+}
+</script>
 <script src="./js/main.js"></script>
 </body>
 </html>

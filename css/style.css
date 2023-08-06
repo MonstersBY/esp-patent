@@ -1024,6 +1024,9 @@ html.modal {
   margin-bottom: 24rem;
   position: relative;
 }
+.baner .swiper {
+  padding: 0 10rem;
+}
 .baner .not-show {
   opacity: 0;
 }
@@ -1185,7 +1188,7 @@ html.modal {
 .baner .baner-swiper-next, .baner .baner-swiper-prev {
   top: 10.5%;
   width: 5rem;
-  z-index: 0;
+  z-index: 1;
 }
 .baner .baner-swiper-next::after, .baner .baner-swiper-prev::after {
   content: unset;
@@ -1268,6 +1271,9 @@ html.modal {
     margin-top: 5rem;
     margin-bottom: 24rem;
     position: relative;
+  }
+  .baner .swiper {
+    padding: 0;
   }
   .baner__video {
     position: absolute;

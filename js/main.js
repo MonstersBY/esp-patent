@@ -7,67 +7,6 @@ $('.header__burger').on('click', function(evt) {
 	$('.header__menu-container').slideToggle();
 });
 
-if (document.querySelector('.video-main')) {
-	document.querySelector('.video-main').addEventListener('ended',myHandler,false);
-}
-	
-function myHandler(e) {
-	$('.baner__video').css('opacity',0)
-	$('.baner__video').css('z-index',-1)
-	$('.baner-container').css('opacity',1)
-	$('.header').css('opacity',1)
-	$('.header').css('margin-top','2.5rem')
-	$('.header').css('max-height','10rem')
-	setTimeout(() =>{
-		$('.header').css('overflow','unset')
-		if ($('.gif-ball video').length) {
-			// $('.swiper-slide-active').find('video').attr("autoplay",'')
-			// $('.swiper-slide-active').find('video').attr("loop",'')
-			// $('.swiper-slide-active').find('video').trigger('play')
-
-			// $('.swiper-slide-prev').find('video').attr("autoplay",'')
-			// $('.swiper-slide-prev').find('video').attr("loop",'')
-			// $('.swiper-slide-prev').find('video').trigger('play')
-
-			// $('.swiper-slide-next').find('video').attr("autoplay",'')
-			// $('.swiper-slide-next').find('video').attr("loop",'')
-			// $('.swiper-slide-next').find('video').trigger('play')
-
-			$('.gif-ball div video').attr("autoplay",'')
-			$('.gif-ball div video').attr("loop",'')
-			$('.gif-ball div video').trigger('play')
-			$('.gif-ball div video').each(function (i) {
-				setInterval(() => {
-					if($(this).prop('currentTime') >= 3.501) {
-						$(this).prop('currentTime', 0.0)
-					}
-				}, 1)
-			})
-
-			// $('.gif-ball div video').bind( "timeupdate", function() {
-			// 	if(this.currentTime >= 3.34) {
-			// 		console.log(this);
-			// 		this.currentTime = 0.0;
-			// 	}
-			// 	reqId = requestAnimationFrame(function play() {
-			// 		console.log(Math.round(video.currentTime * 1000));
-			// 		reqId = requestAnimationFrame(play);
-			// 	});
-			// });
-			// $('.gif-ball div video').each(function (i) {
-			// 	.addEventListener("timeupdate", function () {
-			// 		if(this.currentTime >= 7.0) {
-			// 			console.log(this.currentTime);
-			// 			this.currentTime = 0.0;
-			// 		}
-			// 	});
-			// })
-		}
-	}, 420);
-
-}
-
-
 var waypoint_about_us = new Waypoint({
 	element: document.querySelector('.about-us'),
 	handler: function(direction) {
@@ -163,27 +102,27 @@ $('.modal-box .modal-box__btn').on('click', function(evt) {
 });
 
 
-ymaps.ready(init);
-function init(){
-	// Создание карты.
-	var map = new ymaps.Map("map", {
-		center: [55.759289, 37.556756],
-		zoom: 17,
-	},{
-		yandexMapDisablePoiInteractivity: true
-	});
+// ymaps.ready(init);
+// function init(){
+// 	// Создание карты.
+// 	var map = new ymaps.Map("map", {
+// 		center: [55.759289, 37.556756],
+// 		zoom: 17,
+// 	},{
+// 		yandexMapDisablePoiInteractivity: true
+// 	});
 
-	map.controls.remove('geolocationControl');
-	map.controls.remove('searchControl');
-	map.controls.remove('trafficControl');
-	map.controls.remove('typeSelector');
-	map.controls.remove('fullscreenControl');
-	map.controls.remove('zoomControl');
-	map.controls.remove('rulerControl');
-	map.controls.remove('scrollZoom');
-	map.controls.remove('drag');
-	map.behaviors.disable(['scrollZoom']);
-}
+// 	map.controls.remove('geolocationControl');
+// 	map.controls.remove('searchControl');
+// 	map.controls.remove('trafficControl');
+// 	map.controls.remove('typeSelector');
+// 	map.controls.remove('fullscreenControl');
+// 	map.controls.remove('zoomControl');
+// 	map.controls.remove('rulerControl');
+// 	map.controls.remove('scrollZoom');
+// 	map.controls.remove('drag');
+// 	map.behaviors.disable(['scrollZoom']);
+// }
 
 $('.services-container .services-right').each(function(x){
 	$(this).find('.services-item__number').each(function(x){
