@@ -265,6 +265,12 @@
     position: absolute;
     top: 8rem;
 }
+.test-mobile-video {
+    background: inherit !important;
+}
+.test-mobile-video-swiper {
+    opacity: 0;
+}
 
 @media (max-width: 48em) {
     .baner {
