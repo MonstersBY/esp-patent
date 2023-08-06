@@ -259,6 +259,13 @@
     }
 }
 
+.test-mobile-video img {
+    height: 90%;
+    object-fit: cover;
+    position: absolute;
+    top: 8rem;
+}
+
 @media (max-width: 48em) {
     .baner {
         margin-top: 5rem;
