@@ -179,6 +179,21 @@ if($('.rf').length) {
 		x<9 ? $(this).html('0'+(x+1)) : $(this).html(x+1)
 	})
 }
+// (function (w) {
+//     w.Planet2D = function (interval) {
+//         interval = interval || 40;
+//         var j = 0;
+//         setInterval(function () {
+//             var els = document.querySelectorAll(".baner-circle");
+//             j--;
+//             for (var i = 0; i < els.length; i++) {
+//                 els[i].style.backgroundPosition = j + "px 0px";
+//             }
+//         }, interval);
+//     }
+// 	// w.Planet2D(10)
+// })(window);
 
 });
+
 
